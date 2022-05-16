@@ -3,6 +3,13 @@ import FMC_logo from '../assets/navbar_logo_dropshadow.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
+
+const handleClick = () => {
+    const navmenu = document.getElementsByClassName('navlist')[0];
+    navmenu.classList.toggle('active');
+}
+
+
 const Navbar = () => {
     return(
         <div>
@@ -10,9 +17,10 @@ const Navbar = () => {
                 <div className='navlogo'>
                     <img src={FMC_logo} alt="FMC logo" height="60" width="60"></img>
                 </div>
-                <span className='hamburger-menu fa-2x'><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></span>
-                <div>
-                    <ul className='navlist'>
+                {/* USE STATE INSTEAD OF THIS? - NEED TO CHANGE ICON TO X WHEN ACTIVE */}
+                <btn className='hamburger-menu fa-2x' onClick={handleClick}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></btn>
+                <div className='navlist'>
+                    <ul>
                         <li><a href="#about" className='navlink'>About</a></li>
                         <li><a href="#discord" className='navlink'>Discord</a></li>
                         <li><a href="#team" className='navlink'>Team</a></li>

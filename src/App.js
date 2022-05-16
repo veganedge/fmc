@@ -12,13 +12,16 @@ import Footer from './components/Footer';
 function App() {
   return ( 
     <div className="App_body">
+      {/* Always leave NAVBAR */}
       <Navbar />
+      {/* Look into react router to switch view between these */}
       <Home />
       <About />
       <Discord />
       <Team />
       <Contact />
       <Whitepaper />
+      {/* Always leave FOOTER */}
       <Footer />
     </div>
   );
