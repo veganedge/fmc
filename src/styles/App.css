@@ -19,13 +19,12 @@ a {
   
 /* ===== START OF NAVBAR ===== */
 .navbar {
-    position: sticky;
-    background-color: rgb(109, 204, 162, 1);
-    opacity: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
     z-index: 5;
+    background-color: rgb(109, 204, 162, 1);
 }
   
 .navlogo {
@@ -78,31 +77,37 @@ a {
     .navlist {
         display: none;
         width: 100%;
-        /* THIS IS NOT WORKING */
-        background-color: rgb(109, 204, 162, 0.5);
     }
 
 /* --- makes nav links show as column when hamburger menu is activated --- */
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; 
+        align-items: flex-start; 
     }    
 
     .navlist ul {
-        flex-direction: column;
+        flex-direction: column; 
         text-align: center;
         width: 100%;
+        padding: 0;
+        
     }
 
     .navlist li {
-        padding-bottom: 10px;
+        padding: 10px 0;
+        border-top: black solid 2px;
+    }
+
+    .navlist ul li:hover {
+       background-color: rgb(68, 201, 143);
     }
 
     .navlist.active {
         display: flex;
+        background-color: rgb(147, 199, 176, .5);
+        border-bottom: black solid 2px;
     }
 }
-
 /* --- END OF MOBILE HAMBURGER MENU (within navbar) --- */
 /* ===== END OF NAVBAR ===== */
 

@@ -17,6 +17,7 @@ const Navbar = () => {
                 <div className='navlogo'>
                     <img src={FMC_logo} alt="FMC logo" height="60" width="60"></img>
                 </div>
+                {/* USE STATE INSTEAD OF THIS? - NEED TO CHANGE ICON TO X WHEN ACTIVE */}
                 <btn className='hamburger-menu fa-2x' onClick={handleClick}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></btn>
                 <div className='navlist'>
                     <ul>
