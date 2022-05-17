@@ -2,6 +2,7 @@ import React from 'react';
 import FMC_logo from '../assets/navbar_logo_dropshadow.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 
 const handleClick = () => {
@@ -15,17 +16,19 @@ const Navbar = () => {
         <div>
             <nav className='navbar'>
                 <div className='navlogo'>
-                    <img src={FMC_logo} alt="FMC logo" height="60" width="60"></img>
+                    <Link to="/">
+                        <img src={FMC_logo} alt="FMC logo" height="60" width="60"></img>
+                    </Link>
                 </div>
                 {/* USE STATE INSTEAD OF THIS? - NEED TO CHANGE ICON TO X WHEN ACTIVE */}
                 <btn className='hamburger-menu fa-2x' onClick={handleClick}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></btn>
                 <div className='navlist'>
                     <ul>
-                        <li><a href="#about" className='navlink'>About</a></li>
-                        <li><a href="#discord" className='navlink'>Discord</a></li>
-                        <li><a href="#team" className='navlink'>Team</a></li>
-                        <li><a href="#contact" className='navlink'>Contact</a></li>
-                        <li><a href="https://furusmintclub.gitbook.io/fmc-genesis-whitepaper/" className='navlink' target='_blank' rel="noopener noreferrer">Whitepaper</a></li>
+                        <li><Link to="/about" className='navlink'>About</Link></li>
+                        <li><Link to="/dashboard" className='navlink'>Member Dashboard</Link></li>
+                        {/*<li><a href="#about" className='navlink'>About</a></li>
+                        <li><a href="#dashboard" className='navlink'>Member Dashboard</a></li>
+                        <li><a href="https://furusmintclub.gitbook.io/fmc-genesis-whitepaper/" className='navlink' target='_blank' rel="noopener noreferrer">Whitepaper</a></li>*/}
                     </ul>
                 </div>
             </nav>

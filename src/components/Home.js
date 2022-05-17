@@ -14,9 +14,7 @@ const divStyle = {
 
 const Home = () => {
     return(
-        <div className='home' style={divStyle}>
-            
-        </div> 
+        <div className='home' style={divStyle}></div> 
     );
 }
 
@@ -26,8 +24,7 @@ export default Home;
 // === HOME ===
 
 // -- Navbar --
-// setup hamburger menu:
-// have divs appear when clicked?
+// fix css for links
 
 // -- Darkmode --
 // Images in navbar after links
@@ -40,10 +37,6 @@ export default Home;
 
 
 // === APP ===
-
-// -- Need to put in ReactRouter and routes for content loading --
-// Install ReactRouter
-// set up routes and switch and links 
 
 
 // === TEAM ===
@@ -64,5 +57,3 @@ export default Home;
 
 // === CONTACT ===
 // gmail?  Necessary at all?
-
-
