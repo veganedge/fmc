@@ -1,10 +1,9 @@
-import React from 'react';
-
+import React from 'react'
 
 const Dashboard = () => {
     return(
         <div id='dashboard'>
-            <h1 style={{textAlign: 'center'}}>Content: Dashboard</h1>
+            <h1 style={{textAlign: 'center', textDecoration: 'underline'}}>Content: Dashboard</h1>
         </div>
     );
 }

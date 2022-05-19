@@ -6,7 +6,7 @@ import Whitepaper from '../components/Whitepaper';
 const About = () => {
     return (
         <div id='about'>
-            <h1 style={{textAlign: 'center'}}>Content: About</h1>
+            <h1 style={{textAlign: 'center', textDecoration: 'underline'}}>Content: About</h1>
             <Discord />
             <Team />
             <Whitepaper />
