@@ -1,5 +1,7 @@
 import React from 'react';
-import BGimageDesktop from '../assets/Desktop_BG.png'
+import BGimageDesktop from '../assets/Desktop_BG.png';
+/*import BGimageTablet from '../assets/Tablet_BG.svg';
+import BGimageMobile from '../assets/Mobile_BG.svg';*/
 
 const divStyle = {
     width: '100vw',
@@ -12,9 +14,10 @@ const divStyle = {
 }    
 
 
+
 const Home = () => {
     return(
-        <div className='home' style={divStyle}></div> 
+        <div className='home' style={divStyle}></div>
     );
 }
 

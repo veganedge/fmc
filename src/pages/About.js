@@ -1,7 +1,7 @@
 import React from 'react';
-import Discord from './Discord';
-import Team from './Team';
-import Whitepaper from './Whitepaper';
+import Discord from '../components/Discord';
+import Team from '../components/Team';
+import Whitepaper from '../components/Whitepaper';
 
 const About = () => {
     return (
