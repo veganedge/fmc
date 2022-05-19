@@ -24,6 +24,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 {/* USE STATE INSTEAD OF THIS? - NEED TO CHANGE ICON TO X WHEN ACTIVE */}
+                {/* X ICON IS LOADED AND STYLED IN CORRECT LOCATION - active class only checked on page load */}
                 <btn onClick={handleClick}>
                     {navmenu.classList.active ? <FontAwesomeIcon className='close-icon fa-2x' icon={faTimes} /> : <FontAwesomeIcon className='hamburger-icon fa-2x' icon={faBars} />}
                 </btn>
