@@ -62,6 +62,19 @@ export default Home;
 // -- Layout --
 // show Discord, Team, and Whitepaper
 
+
+// === DASHBOARD ===
+
+// -- Layout --
+// Dark theme (to visually show members they are logged into that area - instead of the public site)
+// Maybe small left icon menu (could expand out to text onclick)
+//  1. Tracker of WLs/Giveaways/whatever else from FMC discord - using Discord API
+//  2. Data on the plays made in FMC - using Etherscan API
+//  3. WL Marketplace
+//  4. Mint calendar
+// Right side all data or whatever component was clicked from left menu
+
+
 // === PUBLIC FOLDER ===
 
 // -- Need to put in favicon --

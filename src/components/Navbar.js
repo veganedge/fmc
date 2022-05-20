@@ -24,17 +24,15 @@ const Navbar = () => {
                     </Link>
                 </div>
                 {/* USE STATE INSTEAD OF THIS? - NEED TO CHANGE ICON TO X WHEN ACTIVE */}
-                {/* X ICON IS LOADED AND STYLED IN CORRECT LOCATION - active class only checked on page load */}
+                {/* X ICON IS LOADED AND STYLED IN CORRECT LOCATION - but active class only checked on page load, not with each onClick */}
                 <btn onClick={handleClick}>
                     {navmenu.classList.active ? <FontAwesomeIcon className='close-icon fa-2x' icon={faTimes} /> : <FontAwesomeIcon className='hamburger-icon fa-2x' icon={faBars} />}
                 </btn>
                 <div className='navlist'>
                     <ul>
                         <li><Link to="/about" className='navlink'>About</Link></li>
+                        {/* use Team, Discord, and Whitepaper components in ABOUT */}
                         <li><Link to="/dashboard" className='navlink'>Member Dashboard</Link></li>
-                        {/*<li><a href="#about" className='navlink'>About</a></li>
-                        <li><a href="#dashboard" className='navlink'>Member Dashboard</a></li>
-                        <li><a href="https://furusmintclub.gitbook.io/fmc-genesis-whitepaper/" className='navlink' target='_blank' rel="noopener noreferrer">Whitepaper</a></li>*/}
                     </ul>
                 </div>
             </nav>
