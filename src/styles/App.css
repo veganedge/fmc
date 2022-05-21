@@ -55,7 +55,7 @@ a {
 }
 
 /* ----- START OF MOBILE HAMBURGER MENU (within navbar) ----- */
-/* --- styles hamburger menu (but not show until over 600px screen) --- */
+/* --- styles hamburger menu (but not shown until -600px screen) --- */
 .hamburger-icon, .close-icon {
     position: absolute;
     top: 1.25rem;
@@ -70,7 +70,7 @@ a {
 
 /* --- shows hamburger and hide regular nav (-600px screen) --- */
 @media screen and (max-width: 600px) {
-    .hamburger-icon {
+    .hamburger-icon, .close-icon {
         display: flex;
     }
 
@@ -141,7 +141,7 @@ footer {
 .social a:hover {
     color: #fff;
 }
-  
+
 .copyright {
     padding-right: 20px;
 }

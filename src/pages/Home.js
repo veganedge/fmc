@@ -35,7 +35,6 @@ export default Home;
 
 
 // === NAVBAR ===
-// make X icon for mobile when active
 
 // -- Darkmode --
 // Images in navbar after links
