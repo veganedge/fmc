@@ -1,31 +1,37 @@
-import React from 'react';
-import FMC_logo from '../assets/navbar_logo_dropshadow.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-
-
-const handleClick = () => {
-    const navmenu = document.getElementsByClassName('navlist')[0];
-    navmenu.classList.toggle('active');
-}
+import React from 'react'
+import FMC_logo from '../assets/navbar_logo_dropshadow.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars,faTimes } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 
 const Navbar = () => {
+
+    const [active, setActive] = useState(false);
+  
+    const handleClick = () => { 
+        const navmenu = document.getElementsByClassName('navlist')[0];
+        navmenu.classList.toggle('active');
+    }
+
+    
     return(
         <div>
             <nav className='navbar'>
                 <div className='navlogo'>
-                    <img src={FMC_logo} alt="FMC logo" height="60" width="60"></img>
+                    <Link to="/">
+                        <img src={FMC_logo} alt="FMC logo" height="60" width="60"></img>
+                    </Link>
                 </div>
-                {/* USE STATE INSTEAD OF THIS? - NEED TO CHANGE ICON TO X WHEN ACTIVE */}
-                <btn className='hamburger-menu fa-2x' onClick={handleClick}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></btn>
+                <btn onClick={() => { handleClick(); setActive(!active)}}>
+                    {active ? <FontAwesomeIcon className='close-icon fa-2x' icon={faTimes} /> : <FontAwesomeIcon className='hamburger-icon fa-2x' icon={faBars} />} 
+                </btn>
                 <div className='navlist'>
                     <ul>
-                        <li><a href="#about" className='navlink'>About</a></li>
-                        <li><a href="#discord" className='navlink'>Discord</a></li>
-                        <li><a href="#team" className='navlink'>Team</a></li>
-                        <li><a href="#contact" className='navlink'>Contact</a></li>
-                        <li><a href="https://furusmintclub.gitbook.io/fmc-genesis-whitepaper/" className='navlink' target='_blank' rel="noopener noreferrer">Whitepaper</a></li>
+                        <li><Link to="/about" className='navlink'>About</Link></li>
+                        {/* use Team, Discord, and Whitepaper components in ABOUT */}
+                        <li><Link to="/dashboard" className='navlink'>Member Dashboard</Link></li>
                     </ul>
                 </div>
             </nav>
