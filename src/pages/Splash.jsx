@@ -15,13 +15,13 @@ const divStyle = {
 
 
 
-const Home = () => {
+const Splash = () => {
     return(
-        <div className='home' style={divStyle}></div>
+        <div className='splash' style={divStyle}></div>
     );
 }
 
-export default Home;
+export default Splash;
 
 
 // === HOME ===

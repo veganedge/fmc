@@ -10,7 +10,7 @@ html, body {
     width: 100%;
 }
   
-a {
+a, button {
     cursor: pointer;
 }
 /* ===== END OF GLOBAL CSS ===== */
@@ -23,6 +23,7 @@ a {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 0;
     z-index: 5;
     background-color: rgb(109, 204, 162, 1);
 }
@@ -38,7 +39,7 @@ a {
 .navlist ul {
     display: flex;
     list-style-type: none;
-    padding: 0 25px;
+    padding-right: 25px;
 }
 
 .navlink {
@@ -46,7 +47,7 @@ a {
     font-weight: 650;
     color: black;
     text-decoration: none;
-    padding-right: 10px;
+    padding-right: 15px;
 }
  
 .navlink:hover {
@@ -115,13 +116,119 @@ a {
 /*    divStyle.backgroundImage = `url(${BGimageMobile})`    */
 
 
+/* ===== START OF DISCORD ===== */
+.discord-btn {
+    display: flex;
+    width: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(109, 204, 162, 1);
+}
+.discord-btn-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.discord-btn a {
+    color: black;
+}
+
+.discord-btn-text {
+    margin-left: 20px;
+}
+
+.discord-btn-text:hover {
+    color: #ffde59;
+}
+/* ===== END OF DISCORD ===== */
+
+
+/* ===== START OF WHITEPAPER ===== */
+.whitepaper-btn {
+    display: flex;
+    width: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: rgb(109, 204, 162, 1);
+}
+
+.whitepaper-btn a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.whitepaper-btn a:hover {
+    color: #ffde59;
+}
+/* ===== END OF WHITEPAPER ===== */
+
+
+/* ===== START OF DASHBOARD ===== */
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    background-color: #1e1f21;
+    margin-bottom: 0;
+}
+
+.sidebar-navlogo {
+    margin-bottom: 25px;
+}
+
+.sidebar-chevron {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sidebar ul {
+    height: 100vh;
+    list-style-type: none;
+}
+
+.sidebar li {
+   justify-content: space-between;
+   
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #3e4145;
+}
+
+.sidebar-link:active {
+    color: #11df93;
+}
+
+.dashboard-content {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #3e4145;
+}
+/* ===== END OF DASHBOARD ===== */
+
+
 /* ===== START OF FOOTER ===== */
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 60px;
     line-height: 60px;
+    background-color: rgb(109, 204, 162, 1);
 }
   
 .footer-container {
@@ -148,5 +255,16 @@ footer {
   
 .FMCtext {
     color: black;
+}
+
+/* --- changes the social icons and copyright text to show everything on mobile --- */
+@media screen and (max-width: 600px) {
+    .social a {
+        font-size: 24px;
+    }
+    
+    .copyright {
+        font-size: 10px;
+    }
 }
 /* ===== END OF FOOTER ===== */
