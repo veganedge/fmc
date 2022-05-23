@@ -13,9 +13,6 @@ const Navbar = () => {
         const navmenu = document.getElementsByClassName('navlist')[0];
         navmenu.classList.toggle('active');
     }
-    
-    /* attempting to change the state so can show only dashboard if path is "/Dashboard" but believe this is actually changing state here - and need to pass that state to APP.JSX maybe? */
-    const [loggedIn, setLoggedIn] = useState(false);
 
 
     return(
@@ -31,7 +28,7 @@ const Navbar = () => {
                     <li><Link to="/About" className='navlink'>About</Link></li>
                     {/* use Team, Discord, and Whitepaper components in ABOUT */}
                     <li><Link to="/Newbie" className='navlink'>NEWbie University</Link></li>
-                    <li><Link to="/Dashboard" className='navlink' onClick={ () => {setLoggedIn(!loggedIn)} }>Member Dashboard</Link></li>
+                    <li><Link to="/Dashboard" className='navlink'>Member Dashboard</Link></li>
                 </ul>
             </div>
         </nav>
