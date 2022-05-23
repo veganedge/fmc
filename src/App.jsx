@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './styles/App.css';
 import Navbar from './components/Navbar.js';
 import Splash from './pages/Splash.jsx'
@@ -14,7 +14,7 @@ function App() {
 
   return ( 
     <div className="App_body">
-      <Navbar />
+      { path="/Dashboard" ? <Dashboard /> : <Navbar /> }
       <div className="Content">
         <Routes>
           <Route path="/" element={<Splash />} />
