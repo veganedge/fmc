@@ -13,6 +13,8 @@ const Dashboard = () => {
                     <Route />
                     <Route />
                     <Route />
+                    <Route />
+                    <Route />
                 </Routes>
             </div> 
         </div>
