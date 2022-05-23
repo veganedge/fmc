@@ -1,3 +1,5 @@
+
+
 const Newbie = () => {
     return (
         <div id='newbie'>

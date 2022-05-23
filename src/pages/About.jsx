@@ -1,4 +1,3 @@
-import React from 'react';
 import Discord from '../components/Discord.js';
 import Team from '../components/Team.js';
 import Whitepaper from '../components/Whitepaper.js';

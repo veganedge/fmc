@@ -14,7 +14,8 @@ function App() {
 
   return ( 
     <div className="App_body">
-      { path="/Dashboard" ? <Dashboard /> : <Navbar /> }
+     {/*} { path="/Dashboard" ? <Dashboard /> : <Navbar /> } */}
+     <Navbar />
       <div className="Content">
         <Routes>
           <Route path="/" element={<Splash />} />

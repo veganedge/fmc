@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Sidebar from '../components/Sidebar.js'
+import Marketplace from '../components/dashboard/Marketplace.js';
 
 
 const Dashboard = () => {
@@ -9,7 +10,7 @@ const Dashboard = () => {
             <div className='dashboard-content'>
                 <h1>Component shown after clicking icon on sidebar</h1>
                 <Routes>
-                    <Route />
+                    <Route path="/Dashboard/Marketplace" element={<Marketplace />}/>
                     <Route />
                     <Route />
                     <Route />
