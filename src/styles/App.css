@@ -29,11 +29,13 @@ a, button, btn {
 }
   
 .navlogo {
-    padding-left: 25px;
-    margin-top: 10px;
-    height: 60px;
-    width: 60px;
+    margin-left: 25px;
     align-items: center;
+}
+
+.navlogo img {
+    height: 100%;
+    width: 65px;
 }
 
 .navlist ul {
