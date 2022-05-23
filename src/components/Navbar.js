@@ -27,7 +27,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <btn onClick={ () => { handleClick(); setActive(!active)} }>
-                {active ? <FontAwesomeIcon className='close-icon fa-2x' icon={faTimes} /> : <FontAwesomeIcon className='hamburger-icon fa-2x' icon={faBars} />} 
+                { active ? <FontAwesomeIcon className='close-icon fa-2x' icon={faTimes} /> : <FontAwesomeIcon className='hamburger-icon fa-2x' icon={faBars} /> } 
             </btn>
             <div className='navlist'>
                 <ul>
