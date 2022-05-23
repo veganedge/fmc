@@ -10,7 +10,7 @@ const Dashboard = () => {
             <div className='dashboard-content'>
                 <h1>Component shown after clicking icon on sidebar</h1>
                 <Routes>
-                    <Route path="/Dashboard/Marketplace" element={<Marketplace />}/>
+                    <Route path="/Marketplace" element={<Marketplace />}/>
                     <Route />
                     <Route />
                     <Route />
