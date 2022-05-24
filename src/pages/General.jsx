@@ -14,11 +14,11 @@ function General() {
   return ( 
     <div className="App_body">
      <Navbar />
-      <div className="Content">
+      <div className="content">
         <Routes>
           <Route path="/" element={<GeneralIntro />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Newbie" element={<NewbieUniversity />} />
+          <Route path="About" element={<About />} />
+          <Route path="Newbie" element={<NewbieUniversity />} />
           <Route path="*" element={<GenNoPage />} />
         </Routes>
       </div>

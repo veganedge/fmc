@@ -172,6 +172,15 @@ a, button, btn {
 /* ===== END OF WHITEPAPER ===== */
 
 
+/* ===== START OF NEWBIE UNIVERSITY ===== */
+.newbie {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* ===== END OF NEWBIE UNIVERSITY ===== */
+
+
 /* ===== START OF DASHBOARD ===== */
 .dashboard {
     display: flex;

@@ -2,7 +2,7 @@
 
 const Newbie = () => {
     return (
-        <div id='newbie'>
+        <div className='newbie'>
             <h1 style={{textAlign: 'center', textDecoration: 'underline'}}>Showing: Newbie University</h1>
         </div>
         
