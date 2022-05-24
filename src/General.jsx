@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './styles/App.css';
 import Navbar from './components/Navbar.js';
-import Splash from './pages/Splash.jsx'
+import Splash from './pages/Splash.js'
 import About from './pages/About.jsx';
 import NewbieUniversity from './pages/NewbieUniversity.jsx'
 import NoSuchPage from './pages/NoSuchPage.jsx';

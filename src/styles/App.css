@@ -126,12 +126,15 @@ a, button, btn {
     margin-bottom: 50px;
     border-radius: 10px;
     font-size: 24px;
-    background-color: rgb(109, 204, 162, 1);
-}
-.discord-btn-container {
-    display: flex;
     align-items: center;
     padding: 10px;
+    background-color: rgb(109, 204, 162, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.discord-btn:hover {
+    color: #ffde59;
 }
 
 .discord-btn a {
@@ -141,12 +144,7 @@ a, button, btn {
 }
 
 .discord-btn-text {
-    margin-left: 20px;
-    color: white;
-}
-
-.discord-btn-text:hover {
-    color: #ffde59;
+    margin-left: 20px; 
 }
 /* ===== END OF DISCORD ===== */
 

@@ -3,7 +3,7 @@
 const Marketplace = () => {
     return (
         <div className='fmc-marketplace-container'>
-            <div className='fmc-marketplace-placeholder'>FMC MARKETPLACE COMPONENT</div>
+            <div className='fmc-marketplace-placeholder'>MARKETPLACE COMPONENT</div>
        </div>
     )
 }
