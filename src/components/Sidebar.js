@@ -24,7 +24,7 @@ const Sidebar = () => {
             <ul>
                 {/* FIGURE OUT HOW TO SPACE THESE OUT FROM THE TOP OF WHERE THEY ARE TO BOTTOM OF VIEWPORT */}
                 <li><Link to="/Dashboard/Marketplace" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faDollarSign} /></Link></li>
-                <li><Link to="" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faChartLine} /></Link></li>
+                <li><Link to="/Dashboard/Charting" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faChartLine} /></Link></li>
                 <li><Link to="" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faCalendar} /></Link></li>
                 <li><Link to="" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faPoll} /></Link></li>
                 <li><Link to="" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faBell} /></Link></li>

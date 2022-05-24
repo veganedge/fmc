@@ -2,8 +2,8 @@
 
 const Marketplace = () => {
     return (
-        <div>
-        <h1>FMC MARKETPLACE</h1>
+        <div className='fmc-marketplace-container'>
+            <div className='fmc-marketplace-placeholder'>FMC MARKETPLACE COMPONENT</div>
        </div>
     )
 }

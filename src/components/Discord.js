@@ -11,10 +11,12 @@ const Discord = () => {
             <p style={{textAlign: 'center', marginBottom: 25}}>We have a Promoter Program that reach out to soon-to-launch projects and secure WL spots to raffle off amongst our community.</p>
             <button className='discord-btn'>
                 <div className='discord-btn-container'>
-                    <a href="https://discord.gg/furusmintclub" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faDiscord} /></a>
-                    <div className='discord-btn-text'>
-                        <p>Join the discord</p>
-                    </div>
+                    <a href="https://www.discord.gg/furusmintclub" target="_blank" rel="noreferrer noopener">
+                        <FontAwesomeIcon icon={faDiscord} />
+                        <div className='discord-btn-text'>
+                            <p>Join the discord</p>
+                        </div>
+                    </a>
                 </div>
             </button>
         </div>

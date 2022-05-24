@@ -126,7 +126,6 @@ a, button, btn {
     margin-bottom: 50px;
     border-radius: 10px;
     font-size: 24px;
-    color: white;
     background-color: rgb(109, 204, 162, 1);
 }
 .discord-btn-container {
@@ -136,11 +135,14 @@ a, button, btn {
 }
 
 .discord-btn a {
+    display: flex;
     color: black;
+    text-decoration: none;
 }
 
 .discord-btn-text {
     margin-left: 20px;
+    color: white;
 }
 
 .discord-btn-text:hover {
@@ -231,6 +233,24 @@ a, button, btn {
     background-color: #3e4145;
 }
 /* ===== END OF DASHBOARD ===== */
+
+
+/* ===== START OF MARKETPLACE ===== */
+.fmc-marketplace-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.fmc-marketplace-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 32px;
+    color: white;
+}
+/* ===== END OF MARKETPLACE ===== */
 
 
 /* ===== START OF FOOTER ===== */
