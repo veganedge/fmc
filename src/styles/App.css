@@ -10,7 +10,7 @@ html, body {
     width: 100%;
 }
   
-a {
+a, button, btn {
     cursor: pointer;
 }
 /* ===== END OF GLOBAL CSS ===== */
@@ -23,22 +23,25 @@ a {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 0;
     z-index: 5;
     background-color: rgb(109, 204, 162, 1);
 }
   
 .navlogo {
-    padding-left: 25px;
-    margin-top: 10px;
-    height: 60px;
-    width: 60px;
+    margin-left: 25px;
     align-items: center;
+}
+
+.navlogo img {
+    height: 100%;
+    width: 65px;
 }
 
 .navlist ul {
     display: flex;
     list-style-type: none;
-    padding: 0 25px;
+    padding-right: 25px;
 }
 
 .navlink {
@@ -46,7 +49,7 @@ a {
     font-weight: 650;
     color: black;
     text-decoration: none;
-    padding-right: 10px;
+    padding-right: 15px;
 }
  
 .navlink:hover {
@@ -115,13 +118,166 @@ a {
 /*    divStyle.backgroundImage = `url(${BGimageMobile})`    */
 
 
+/* ===== START OF DISCORD ===== */
+.discord-btn {
+    display: flex;
+    width: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(109, 204, 162, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.discord-btn:hover {
+    color: #ffde59;
+}
+
+.discord-btn a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.discord-btn-text {
+    margin-left: 20px; 
+}
+/* ===== END OF DISCORD ===== */
+
+
+/* ===== START OF WHITEPAPER ===== */
+.whitepaper-btn {
+    display: flex;
+    width: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: rgb(109, 204, 162, 1);
+}
+
+.whitepaper-btn a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.whitepaper-btn a:hover {
+    color: #ffde59;
+}
+/* ===== END OF WHITEPAPER ===== */
+
+
+/* ===== START OF NEWBIE UNIVERSITY ===== */
+.newbie {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* ===== END OF NEWBIE UNIVERSITY ===== */
+
+
+/* ===== START OF DASHBOARD ===== */
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    background-color: #1e1f21;
+    margin-bottom: 0;
+    transition: all 1s;
+}
+
+.sidebar.expanded {
+    margin-right: 100px;
+    background-color: #1e1f21
+}
+
+.sidebar-navlogo {
+    margin-bottom: 25px;
+}
+
+.sidebar-chevron {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sidebar ul {
+    height: 100vh;
+    list-style-type: none;
+}
+
+.sidebar li {
+   justify-content: space-between;
+   
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #3e4145;
+}
+
+.sidebar-link:hover {
+    color: #11df93;
+}
+
+.sidebar-link:active {
+    color: #11df93;
+}
+
+.dashboard-content {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-color: #3e4145;
+}
+
+.dashboard-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/* ===== END OF DASHBOARD ===== */
+
+
+/* ===== START OF MARKETPLACE ===== */
+.fmc-marketplace-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.fmc-marketplace-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 32px;
+    color: white;
+}
+/* ===== END OF MARKETPLACE ===== */
+
+
 /* ===== START OF FOOTER ===== */
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 60px;
     line-height: 60px;
+    background-color: rgb(109, 204, 162, 1);
 }
   
 .footer-container {
@@ -148,5 +304,16 @@ footer {
   
 .FMCtext {
     color: black;
+}
+
+/* --- changes the social icons and copyright text to show everything on mobile --- */
+@media screen and (max-width: 600px) {
+    .social a {
+        font-size: 24px;
+    }
+    
+    .copyright {
+        font-size: 10px;
+    }
 }
 /* ===== END OF FOOTER ===== */

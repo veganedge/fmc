@@ -1,5 +1,4 @@
-import React from 'react';
-import BGimageDesktop from '../assets/Desktop_BG.png';
+import BGimageDesktop from '../../assets/Desktop_BG.png';
 /*import BGimageTablet from '../assets/Tablet_BG.svg';
 import BGimageMobile from '../assets/Mobile_BG.svg';*/
 
@@ -15,13 +14,13 @@ const divStyle = {
 
 
 
-const Home = () => {
+const GeneralIntro = () => {
     return(
-        <div className='home' style={divStyle}></div>
+        <div className='general-intro' style={divStyle}></div>
     );
 }
 
-export default Home;
+export default GeneralIntro;
 
 
 // === HOME ===
@@ -65,13 +64,11 @@ export default Home;
 // === DASHBOARD ===
 
 // -- Layout --
-// Dark theme (to visually show members they are logged into that area - instead of the public site)
 // Maybe small left icon menu (could expand out to text onclick)
 //  1. Tracker of WLs/Giveaways/whatever else from FMC discord - using Discord API
 //  2. Data on the plays made in FMC - using Etherscan API
 //  3. WL Marketplace
 //  4. Mint calendar
-// Right side all data or whatever component was clicked from left menu
 
 
 // === PUBLIC FOLDER ===
