@@ -1,4 +1,4 @@
-import BGimageDesktop from '../assets/Desktop_BG.png';
+import BGimageDesktop from '../../assets/Desktop_BG.png';
 /*import BGimageTablet from '../assets/Tablet_BG.svg';
 import BGimageMobile from '../assets/Mobile_BG.svg';*/
 
@@ -14,13 +14,13 @@ const divStyle = {
 
 
 
-const Splash = () => {
+const GeneralIntro = () => {
     return(
-        <div className='splash' style={divStyle}></div>
+        <div className='general-intro' style={divStyle}></div>
     );
 }
 
-export default Splash;
+export default GeneralIntro;
 
 
 // === HOME ===

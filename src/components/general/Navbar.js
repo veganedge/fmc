@@ -1,4 +1,4 @@
-import FMC_logo from '../assets/navbar_logo_dropshadow.png';
+import FMC_logo from '../../assets/navbar_logo_dropshadow.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars,faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';

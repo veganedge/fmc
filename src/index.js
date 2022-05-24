@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
 import Dashboard from './pages/Dashboard.jsx';
-import General from './General.jsx';
+import General from './pages/General.jsx';
 
 
 ReactDOM.render(

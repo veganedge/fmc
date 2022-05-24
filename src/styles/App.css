@@ -225,10 +225,20 @@ a, button, btn {
 }
 
 .dashboard-content {
-    width: 100%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     color: white;
     background-color: #3e4145;
+}
+
+.dashboard-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 /* ===== END OF DASHBOARD ===== */
 
