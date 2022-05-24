@@ -11,7 +11,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/*" element={<General />} />
-        <Route path="/Dashboard/" element={<Dashboard />} />
+        <Route path="/Dashboard/*" element={<Dashboard />} />
       </Routes>
     </Router>
   </React.StrictMode>,
