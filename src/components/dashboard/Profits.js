@@ -3,7 +3,7 @@
 const Profits = () => {
     return (
         <div className='fmc-marketplace-container'>
-            <div className='fmc-marketplace-placeholder'>PROFITS COMPONENT</div>
+            <div className='centered-placeholder'>PROFITS COMPONENT</div>
        </div>
     )
 }
