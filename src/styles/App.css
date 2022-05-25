@@ -262,8 +262,8 @@ a, button, btn {
 .marketplace-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+   /* width: 100%;
+    height: 100%;*/
 }
 
 .marketplace-images-container {
@@ -274,7 +274,7 @@ a, button, btn {
 }
 
 .marketplace-images-container img {
-    margin: 60px 30px 30px 60px;
+    margin: 20px 20px 0px 20px;
 }
 
 .centered-placeholder {
@@ -284,6 +284,40 @@ a, button, btn {
     width: 100%;
     font-size: 32px;
     color: white;
+}
+
+.item-card-container {
+    border: 3px solid black;
+    margin: 3px 0px;
+}
+
+.item-card-container h3 {
+    margin-top: 5px;
+    color: #1e1f21;
+}
+
+.remaining {
+    margin-top: 20px;
+    color: #9c00e2;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.item-card-container h5 {
+    color: #1e1f21;
+}
+.item-card-container button {
+    background-color: #1e1f21;
+    color:#3e4145;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.item-card-container button:hover {
+    color:#76fff8;
 }
 /* ===== END OF MARKETPLACE ===== */
 
@@ -308,12 +342,13 @@ a, button, btn {
 }
 
 .chart-button {
-    height: 50px;
-    width: 100px;
+    padding: 8px;
     margin: 25px;
     background-color: #1e1f21;
     color: #3e4145;
     border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .chart-button:hover{
