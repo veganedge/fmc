@@ -187,36 +187,43 @@ a, button, btn {
 }
 /* --- START OF SIDEBAR --- */
 .sidebar {
+    position: fixed;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    text-align: center;
+    width: 60px;
     background-color: #1e1f21;
-    transition: all 1s;
-}
-
-.sidebar.expanded {
-    margin-right: 100px;
-    background-color: #1e1f21;
+    transition: all 0.3s;
 }
 
 .sidebar-icons-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
+}
+
+.sidebar.expanded {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 11%;
+    text-align: right;
+    background-color: #1e1f21;
+    
 }
 
 .sidebar-logo-chevron-container {
     display: flex;
     flex-direction: column;
-
 }
 
 .sidebar-navlogo {
     height: 60px;
     width: 60px;
-
+    display: flex;
 }
 
 .spacer {
@@ -228,13 +235,20 @@ a, button, btn {
 }
 
 .sidebar li {
-   justify-content: space-evenly;
-   margin: 25px 0px 25px 0px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px 0px 25px 0px;
+ }
 
 .sidebar-link {
+    display: flex;
     text-decoration: none;
     color: #3e4145;
+}
+
+.sidebar-link p {
+    margin-right: 6px;
 }
 
 .sidebar-link:hover, .sidebar-link:active {
@@ -245,6 +259,7 @@ a, button, btn {
     display: flex;
     width: 100vw;
     height: 100vh;
+    margin-left: 60px;
     text-align: center;
     color: white;
     background-color: #3e4145;

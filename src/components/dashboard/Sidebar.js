@@ -28,13 +28,42 @@ const Sidebar = () => {
                 </div>
                 <span className='spacer'></span>
                 <ul>
-                    {/* FIGURE OUT HOW TO SPACE THESE OUT FROM THE TOP OF WHERE THEY ARE TO BOTTOM OF VIEWPORT */}
-                    <li><Link to="/Dashboard/Marketplace" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faDollarSign} /></Link></li>
-                    <li><Link to="/Dashboard/Charting" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faChartLine} /></Link></li>
-                    <li><Link to="/Dashboard/Calendar" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faCalendar} /></Link></li>
-                    <li><Link to="/Dashboard/Profits" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faPoll} /></Link></li>
-                    <li><Link to="/Dashboard/Notifications" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faBell} /></Link></li>
-                    <li><Link to="/Dashboard/NodeInfo" className='sidebar-link fa-2x'><FontAwesomeIcon icon={faBolt} /></Link></li>
+                    <li>
+                        <Link to="/Dashboard/Marketplace" className='sidebar-link fa-2x'>
+                            { expandSidebar ? <p>Shop</p> : null }
+                            <FontAwesomeIcon icon={faDollarSign} />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Dashboard/Charting" className='sidebar-link fa-2x'>
+                            { expandSidebar ? <p>Chart</p> : null }
+                            <FontAwesomeIcon icon={faChartLine} />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Dashboard/Calendar" className='sidebar-link fa-2x'>
+                            { expandSidebar ? <p>Dates</p> : null }
+                            <FontAwesomeIcon icon={faCalendar} />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Dashboard/Profits" className='sidebar-link fa-2x'>
+                            { expandSidebar ? <p>Profits</p> : null }
+                            <FontAwesomeIcon icon={faPoll} />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Dashboard/Notifications" className='sidebar-link fa-2x'>
+                            { expandSidebar ? <p>Notify</p> : null }
+                            <FontAwesomeIcon icon={faBell} />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Dashboard/NodeInfo" className='sidebar-link fa-2x'>
+                            { expandSidebar ? <p>Node</p> : null }
+                            <FontAwesomeIcon icon={faBolt} />
+                        </Link>
+                    </li>
                 </ul>
                 <span className='spacer'></span>
             </div>
