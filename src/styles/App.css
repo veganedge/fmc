@@ -251,7 +251,7 @@ a, button, btn {
     margin-right: 6px;
 }
 
-.sidebar-link:hover, .sidebar-link:active {
+.sidebar-link:hover, .sidebar-link:active, .sidebar-link:focus {
     color: #11df93;
 }
 /* --- END OF SIDEBAR --- */
