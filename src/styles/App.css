@@ -24,24 +24,24 @@ a, button, btn {
     align-items: center;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 5;
     background-color: rgb(109, 204, 162, 1);
 }
   
 .navlogo {
-    margin-left: 25px;
     align-items: center;
 }
 
 .navlogo img {
-    height: 100%;
-    width: 65px;
+    height: 60px;
+    width: 60px;
 }
 
 .navlist ul {
     display: flex;
     list-style-type: none;
-    padding-right: 25px;
+    
 }
 
 .navlink {
@@ -52,7 +52,7 @@ a, button, btn {
     padding-right: 15px;
 }
  
-.navlink:hover {
+.navlink:hover, .navlink:active {
     color: #ffde59;
     text-decoration: underline;
 }
@@ -61,7 +61,7 @@ a, button, btn {
 /* --- styles hamburger menu (but not shown until -600px screen) --- */
 .hamburger-icon, .close-icon {
     position: absolute;
-    top: 1.25rem;
+    top: 1rem;
     right: 25px;
     display: none;
     color: black;
@@ -185,14 +185,13 @@ a, button, btn {
 .dashboard {
     display: flex;
 }
-
+/* --- START OF SIDEBAR --- */
 .sidebar {
     display: flex;
     flex-direction: column;
     height: 100vh;
     text-align: center;
     background-color: #1e1f21;
-    margin-bottom: 0;
     transition: all 1s;
 }
 
@@ -201,23 +200,36 @@ a, button, btn {
     background-color: #1e1f21;
 }
 
-.sidebar-navlogo {
-    margin-bottom: 25px;
+.sidebar-icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.sidebar-chevron {
-    margin-bottom: 50px;
-    text-align: center;
+.sidebar-logo-chevron-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar-navlogo {
+    height: 60px;
+    width: 60px;
+
+}
+
+.spacer {
+    height: 40px;
 }
 
 .sidebar ul {
-    height: 100vh;
     list-style-type: none;
 }
 
 .sidebar li {
-   justify-content: space-between;
-   
+   justify-content: space-evenly;
+   margin: 25px 0px 25px 0px;
 }
 
 .sidebar-link {
@@ -225,14 +237,10 @@ a, button, btn {
     color: #3e4145;
 }
 
-.sidebar-link:hover {
+.sidebar-link:hover, .sidebar-link:active {
     color: #11df93;
 }
-
-.sidebar-link:active {
-    color: #11df93;
-}
-
+/* --- END OF SIDEBAR --- */
 .dashboard-content {
     display: flex;
     width: 100vw;
@@ -282,8 +290,8 @@ a, button, btn {
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 32px;
-    color: white;
+    font-size: 5rem;
+    color: #1e1f21;
 }
 
 .item-card-container {
