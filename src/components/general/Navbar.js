@@ -17,9 +17,9 @@ const Navbar = () => {
 
     return(
         <nav className='navbar'>
-                <Link to="/" className='navlogo'>
-                    <img src={FMC_logo} alt="FMC logo"></img>
-                </Link>
+            <Link to="/" className='navlogo'>
+                <img src={FMC_logo} alt="FMC logo"></img>
+            </Link>
             <btn onClick={ () => { handleClick(); setActive(!active)} }>
                 { active ? <FontAwesomeIcon className='close-icon fa-2x' icon={faTimes} /> : <FontAwesomeIcon className='hamburger-icon fa-2x' icon={faBars} /> } 
             </btn>

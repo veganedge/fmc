@@ -24,24 +24,24 @@ a, button, btn {
     align-items: center;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 5;
     background-color: rgb(109, 204, 162, 1);
 }
   
 .navlogo {
-    margin-left: 25px;
     align-items: center;
 }
 
 .navlogo img {
-    height: 100%;
-    width: 65px;
+    height: 60px;
+    width: 60px;
 }
 
 .navlist ul {
     display: flex;
     list-style-type: none;
-    padding-right: 25px;
+    
 }
 
 .navlink {
@@ -52,7 +52,7 @@ a, button, btn {
     padding-right: 15px;
 }
  
-.navlink:hover {
+.navlink:hover, .navlink:active {
     color: #ffde59;
     text-decoration: underline;
 }
@@ -61,7 +61,7 @@ a, button, btn {
 /* --- styles hamburger menu (but not shown until -600px screen) --- */
 .hamburger-icon, .close-icon {
     position: absolute;
-    top: 1.25rem;
+    top: 1rem;
     right: 25px;
     display: none;
     color: black;
@@ -185,58 +185,81 @@ a, button, btn {
 .dashboard {
     display: flex;
 }
-
+/* --- START OF SIDEBAR --- */
 .sidebar {
+    position: fixed;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    text-align: center;
+    width: 60px;
     background-color: #1e1f21;
-    margin-bottom: 0;
-    transition: all 1s;
+    transition: all 0.3s;
+}
+
+.sidebar-icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 .sidebar.expanded {
-    margin-right: 100px;
-    background-color: #1e1f21
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 11%;
+    text-align: right;
+    background-color: #1e1f21;
+    
+}
+
+.sidebar-logo-chevron-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-navlogo {
-    margin-bottom: 25px;
+    height: 60px;
+    width: 60px;
+    display: flex;
 }
 
-.sidebar-chevron {
-    margin-bottom: 50px;
-    text-align: center;
+.spacer {
+    height: 40px;
 }
 
 .sidebar ul {
-    height: 100vh;
     list-style-type: none;
 }
 
 .sidebar li {
-   justify-content: space-between;
-   
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px 0px 25px 0px;
+ }
 
 .sidebar-link {
+    display: flex;
     text-decoration: none;
     color: #3e4145;
 }
 
-.sidebar-link:hover {
-    color: #11df93;
+.sidebar-link p {
+    margin-right: 6px;
 }
 
-.sidebar-link:active {
+.sidebar-link:hover, .sidebar-link:active {
     color: #11df93;
 }
-
+/* --- END OF SIDEBAR --- */
 .dashboard-content {
     display: flex;
     width: 100vw;
     height: 100vh;
+    margin-left: 60px;
     text-align: center;
     color: white;
     background-color: #3e4145;
@@ -259,15 +282,102 @@ a, button, btn {
     height: 100%;
 }
 
-.fmc-marketplace-placeholder {
+.marketplace-container {
+    display: flex;
+    flex-wrap: wrap;
+   /* width: 100%;
+    height: 100%;*/
+}
+
+.marketplace-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.marketplace-images-container img {
+    margin: 20px 20px 0px 20px;
+}
+
+.centered-placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 32px;
-    color: white;
+    font-size: 5rem;
+    color: #1e1f21;
+}
+
+.item-card-container {
+    border: 3px solid black;
+    margin: 3px 0px;
+}
+
+.item-card-container h3 {
+    margin-top: 5px;
+    color: #1e1f21;
+}
+
+.remaining {
+    margin-top: 20px;
+    color: #9c00e2;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.item-card-container h5 {
+    color: #1e1f21;
+}
+.item-card-container button {
+    background-color: #1e1f21;
+    color:#3e4145;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.item-card-container button:hover {
+    color:#76fff8;
 }
 /* ===== END OF MARKETPLACE ===== */
+
+
+/* ===== START OF CHARTING ===== */
+.charting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-placeholder {
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.chart-button {
+    padding: 8px;
+    margin: 25px;
+    background-color: #1e1f21;
+    color: #3e4145;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chart-button:hover{
+    color: #76fff8;
+}
+/* ===== END OF CHARTING ===== */
 
 
 /* ===== START OF FOOTER ===== */

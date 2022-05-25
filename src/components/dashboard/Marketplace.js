@@ -1,10 +1,23 @@
+import ItemCard from "./marketplace/ItemCard";
 
 
 const Marketplace = () => {
     return (
-        <div className='fmc-marketplace-container'>
-            <div className='fmc-marketplace-placeholder'>MARKETPLACE COMPONENT</div>
-       </div>
+        <div className='marketplace-images-container'>
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+        </div>  
+        
     )
 }
 

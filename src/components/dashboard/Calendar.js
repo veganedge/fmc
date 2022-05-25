@@ -3,7 +3,7 @@
 const Calendar = () => {
     return (
         <div className='fmc-marketplace-container'>
-            <div className='fmc-marketplace-placeholder'>CALENDAR COMPONENT</div>
+            <div className='centered-placeholder'>CALENDAR COMPONENT</div>
        </div>
     )
 }
