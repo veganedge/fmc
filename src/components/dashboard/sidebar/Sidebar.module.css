@@ -15,7 +15,7 @@
     height: 100vh;
 }
 
-.sidebar.expanded {
+.expanded {
     position: fixed;
     display: flex;
     flex-direction: column;

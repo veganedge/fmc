@@ -2,7 +2,7 @@
 import { Routes, Route } from 'react-router-dom';
 /* Imported custom componenets */
 /*import Sidebar from '../components/dashboard/Sidebar.js';*/
-import Sidebar2 from '../components/dashboard/sidebar/Sidebar2.js';
+import Sidebar from '../components/dashboard/sidebar/Sidebar.js';
 import DashboardIntro from '../components/dashboard/DashboardIntro.js';
 import Marketplace from '../components/dashboard/marketplace/Marketplace.js';
 import Charting from '../components/dashboard/charting/Charting.js';
@@ -16,7 +16,7 @@ import DashNoPage from './DashNoPage.jsx';
 const Dashboard = () => {
     return (
         <div className='dashboard'>
-            <Sidebar2 />
+            <Sidebar />
             <div className='dashboard-content'>
                 <Routes>
                     <Route path="/" element={<DashboardIntro />} />
