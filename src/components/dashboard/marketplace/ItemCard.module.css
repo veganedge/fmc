@@ -10,16 +10,16 @@
     padding: 8px;
 }
 
-p {
+.aboveImageContainerP {
     color:#008fff;
     font-size: 12px;
 }
 
-h3 {
+.itemTitle {
     color: #008fff;
 }
 
-h5 {
+.itemDescription {
     display: flex;
     justify-content: center;
     margin-top: 8px;
@@ -28,7 +28,7 @@ h5 {
     max-width: 200px;
 }
 
-button {
+.itemButton {
     background-color: #1e1f21;
     color:#3e4145;
     font-size: 18px;
@@ -38,6 +38,6 @@ button {
     border-radius: 10px;
 }
 
-button:hover {
+.itemButton:hover {
     color:#76fff8;
 }
