@@ -38,6 +38,16 @@
     display: flex;
 }
 
+.sidebarChevronRight {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebarChevronLeft {
+    display: flex;
+    justify-content: flex-end;
+}
+
 span {
     height: 40px;
 }

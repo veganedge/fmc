@@ -22,9 +22,9 @@ const Sidebar2 = () => {
                 <div className={classes.sidebarLogoChevronContainer}>
                     <Link to="/"><img src={FMC_logo} alt="FMC logo" className={classes.sidebarNavlogo}></img></Link>
                     <span></span>
-                    <btn onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
-                        { expandSidebar ? <FontAwesomeIcon icon={faChevronLeft} className={`${classes.sidebarLink} fa-2x`} /> : <FontAwesomeIcon icon={faChevronRight} className={`${classes.sidebarLink} ${classes.sidebarChevron} fa-2x`} /> }
-                    </btn>
+                    <div className={ expandSidebar ? classes.sidebarChevronLeft : classes.sidebarChevronRight} onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
+                        { expandSidebar ? <FontAwesomeIcon icon={faChevronLeft} className={`${classes.sidebarLink} fa-2x`} /> : <FontAwesomeIcon icon={faChevronRight} className={`${classes.sidebarLink} fa-2x`} /> }
+                    </div>
                     <span></span>
                 </div>
                 <span></span>
