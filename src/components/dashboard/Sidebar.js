@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faBolt, faCalendar, faChartLine, faChevronLeft, faChevronRight, faDollarSign, faPoll } from '@fortawesome/free-solid-svg-icons';
 
+import { DashNavLink } from '../dashboardNavLink/DashNavLink';
 
 const Sidebar = () => {
 
@@ -22,47 +23,60 @@ const Sidebar = () => {
                     <Link to="/"><img src={FMC_logo} alt="FMC logo" className='sidebar-navlogo'></img></Link>
                     <span className='spacer'></span>
                     <btn onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
-                        { expandSidebar ? <FontAwesomeIcon icon={faChevronLeft} className='sidebar-link sidebar-chevron fa-2x' /> : <FontAwesomeIcon icon={faChevronRight} className='sidebar-link sidebar-chevron fa-2x'/> }
+                         <FontAwesomeIcon icon={ expandSidebar ? faChevronLeft : faChevronRight} className={`${expandSidebar && "sidebar-link-active"} sidebar-link sidebar-chevron fa-2x`} /> 
                     </btn>
                     <span className='spacer'></span>
                 </div>
                 <span className='spacer'></span>
                 <ul>
                     <li>
-                        <Link to="/Dashboard/Marketplace" className='sidebar-link fa-2x'>
-                            { expandSidebar ? <p>Shop</p> : null }
-                            <FontAwesomeIcon icon={faDollarSign} />
-                        </Link>
+                        <DashNavLink 
+                            expandSidebar={expandSidebar}
+                            link="/Dashboard/Marketplace" 
+                            text="Shop" 
+                            icon={faDollarSign}
+                        />
+
                     </li>
                     <li>
-                        <Link to="/Dashboard/Charting" className='sidebar-link fa-2x'>
-                            { expandSidebar ? <p>Chart</p> : null }
-                            <FontAwesomeIcon icon={faChartLine} />
-                        </Link>
+                        <DashNavLink 
+                            expandSidebar={expandSidebar}
+                            link="/Dashboard/Charting" 
+                            text="Chart"
+                            icon={faChartLine}
+                        />
                     </li>
                     <li>
-                        <Link to="/Dashboard/Calendar" className='sidebar-link fa-2x'>
-                            { expandSidebar ? <p>Dates</p> : null }
-                            <FontAwesomeIcon icon={faCalendar} />
-                        </Link>
+                        <DashNavLink 
+                            expandSidebar={expandSidebar}
+                            link="/Dashboard/Calendar" 
+                            text="Dates"
+                            icon={faCalendar}
+                        />
                     </li>
                     <li>
-                        <Link to="/Dashboard/Profits" className='sidebar-link fa-2x'>
-                            { expandSidebar ? <p>Profits</p> : null }
-                            <FontAwesomeIcon icon={faPoll} />
-                        </Link>
+                        <DashNavLink 
+                            expandSidebar={expandSidebar}
+                            link="/Dashboard/Profits" 
+                            text="Profits"
+                            icon={faPoll}
+                        />
                     </li>
                     <li>
-                        <Link to="/Dashboard/Notifications" className='sidebar-link fa-2x'>
-                            { expandSidebar ? <p>Notify</p> : null }
-                            <FontAwesomeIcon icon={faBell} />
-                        </Link>
+                        <DashNavLink 
+                            expandSidebar={expandSidebar}
+                            link="/Dashboard/Notifications" 
+                            text="Notify"
+                            icon={faBell}
+                        />
                     </li>
                     <li>
-                        <Link to="/Dashboard/NodeInfo" className='sidebar-link fa-2x'>
-                            { expandSidebar ? <p>Node</p> : null }
-                            <FontAwesomeIcon icon={faBolt} />
-                        </Link>
+                        <DashNavLink 
+                            expandSidebar={expandSidebar}
+                            link="/Dashboard/NodeInfo" 
+                            text="Node"
+                            icon={faBolt}
+                        />
                     </li>
                 </ul>
                 <span className='spacer'></span>
