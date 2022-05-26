@@ -1,4 +1,5 @@
-import ItemCard from "./marketplace/ItemCard";
+/* Importing custom components */
+import ItemCard from "./ItemCard.js";
 
 
 const Marketplace = () => {

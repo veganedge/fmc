@@ -1,6 +1,9 @@
-import FMC_logo from '../../assets/navbar_logo_dropshadow.png';
-import { Link } from 'react-router-dom';
+/* Imports from React */
 import { useState } from 'react';
+/* Imports from React Router */
+import { Link } from 'react-router-dom';
+/* Imported assets */
+import FMC_logo from '../../assets/navbar_logo_dropshadow.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faBolt, faCalendar, faChartLine, faChevronLeft, faChevronRight, faDollarSign, faPoll } from '@fortawesome/free-solid-svg-icons';
 
@@ -36,7 +39,6 @@ const Sidebar = () => {
                             text="Shop" 
                             icon={faDollarSign}
                         />
-
                     </li>
                     <li>
                         <DashNavLink 

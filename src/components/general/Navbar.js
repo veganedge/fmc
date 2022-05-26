@@ -1,8 +1,11 @@
+/* Imports from React */
+import { useState } from 'react';
+/* Imports from React Router */
+import { Link } from 'react-router-dom';
+/* Imported assets */
 import FMC_logo from '../../assets/navbar_logo_dropshadow.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars,faTimes } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 
 const Navbar = () => {

@@ -1,6 +1,8 @@
+/* Imported assets */
 import BGimageDesktop from '../../assets/Desktop_BG.png';
 /*import BGimageTablet from '../assets/Tablet_BG.svg';
 import BGimageMobile from '../assets/Mobile_BG.svg';*/
+
 
 const divStyle = {
     width: '100vw',
@@ -59,16 +61,6 @@ export default GeneralIntro;
 
 // -- Layout --
 // show Discord, Team, and Whitepaper
-
-
-// === DASHBOARD ===
-
-// -- Layout --
-// Maybe small left icon menu (could expand out to text onclick)
-//  1. Tracker of WLs/Giveaways/whatever else from FMC discord - using Discord API
-//  2. Data on the plays made in FMC - using Etherscan API
-//  3. WL Marketplace
-//  4. Mint calendar
 
 
 // === PUBLIC FOLDER ===

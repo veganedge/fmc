@@ -1,3 +1,4 @@
+/* Imported assets */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faShip } from '@fortawesome/free-solid-svg-icons';

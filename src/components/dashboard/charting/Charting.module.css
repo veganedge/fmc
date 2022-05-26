@@ -1,0 +1,24 @@
+.chartPlaceholder {
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.chartingButton {
+    padding: 8px;
+    margin: 25px;
+    background-color: #1e1f21;
+    color: #3e4145;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chartingButton:hover{
+    color: #76fff8;
+}

@@ -1,0 +1,27 @@
+.discordButton {
+    display: flex;
+    width: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(109, 204, 162, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.discordButton:hover {
+    color: #ffde59;
+}
+
+.discordButtonLink {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.discordButtonText {
+    margin-left: 20px; 
+}

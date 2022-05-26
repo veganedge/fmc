@@ -114,39 +114,9 @@ a, button, btn {
 /* --- END OF MOBILE HAMBURGER MENU (within navbar) --- */
 /* ===== END OF NAVBAR ===== */
 
+
 /* --- changes background image to smaller version --- */
 /*    divStyle.backgroundImage = `url(${BGimageMobile})`    */
-
-
-/* ===== START OF DISCORD ===== */
-.discord-btn {
-    display: flex;
-    width: auto;
-    margin: auto;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    font-size: 24px;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(109, 204, 162, 1);
-    color: white;
-    cursor: pointer;
-}
-
-.discord-btn:hover {
-    color: #ffde59;
-}
-
-.discord-btn a {
-    display: flex;
-    color: black;
-    text-decoration: none;
-}
-
-.discord-btn-text {
-    margin-left: 20px; 
-}
-/* ===== END OF DISCORD ===== */
 
 
 /* ===== START OF WHITEPAPER ===== */
@@ -182,89 +152,6 @@ a, button, btn {
 
 
 /* ===== START OF DASHBOARD ===== */
-.dashboard {
-    display: flex;
-}
-/* --- START OF SIDEBAR --- */
-.sidebar {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 60px;
-    background-color: #1e1f21;
-    transition: all 0.3s;
-}
-
-.sidebar-icons-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-}
-
-.sidebar.expanded {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    width: 11%;
-    text-align: right;
-    background-color: #1e1f21;
-    
-}
-
-.sidebar-logo-chevron-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar-navlogo {
-    height: 60px;
-    width: 60px;
-    display: flex;
-}
-
-.sidebar-chevron-right {
-    display: flex;
-    justify-content: center;
-}
-
-.sidebar-chevron-left {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.spacer {
-    height: 40px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-}
-
-.sidebar li {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 25px 0px 25px 0px;
- }
-
-.sidebar-link {
-    display: flex;
-    text-decoration: none;
-    color: #3e4145;
-}
-
-.sidebar-link p {
-    margin-right: 6px;
-}
-
-.sidebar-link:hover, .sidebar-link-active{
-    color: #11df93;
-}
-/* --- END OF SIDEBAR --- */
 .dashboard-content {
     display: flex;
     width: 100vw;
@@ -295,99 +182,17 @@ a, button, btn {
 .marketplace-container {
     display: flex;
     flex-wrap: wrap;
-   /* width: 100%;
+    /*width: 100%;
     height: 100%;*/
 }
 
 .marketplace-images-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
     padding: 60px;
 }
-
-.marketplace-images-container img {
-    margin: 20px 20px 0px 20px;
-}
-
-.centered-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 5rem;
-    color: #1e1f21;
-}
-
-.item-card-container {
-    border: 3px solid black;
-    margin: 3px 0px;
-}
-
-.item-card-container h3 {
-    margin-top: 5px;
-    color: #1e1f21;
-}
-
-.remaining {
-    margin-top: 20px;
-    color: #9c00e2;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.item-card-container h5 {
-    color: #1e1f21;
-}
-.item-card-container button {
-    background-color: #1e1f21;
-    color:#3e4145;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 8px;
-    margin-top: 15px;
-    border-radius: 10px;
-}
-
-.item-card-container button:hover {
-    color:#76fff8;
-}
 /* ===== END OF MARKETPLACE ===== */
-
-
-/* ===== START OF CHARTING ===== */
-.charting-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.chart-placeholder {
-    margin-top: 50px;
-    margin-left: 90px;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-left: 90px;
-}
-
-.chart-button {
-    padding: 8px;
-    margin: 25px;
-    background-color: #1e1f21;
-    color: #3e4145;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.chart-button:hover{
-    color: #76fff8;
-}
-/* ===== END OF CHARTING ===== */
 
 
 /* ===== START OF FOOTER ===== */
@@ -437,3 +242,12 @@ footer {
     }
 }
 /* ===== END OF FOOTER ===== */
+
+.centered-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 5rem;
+    color: #1e1f21;
+}
