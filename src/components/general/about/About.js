@@ -1,3 +1,4 @@
+/* Imported custom components */
 import Discord from './Discord.js';
 import Team from './Team.js';
 import Whitepaper from './Whitepaper';

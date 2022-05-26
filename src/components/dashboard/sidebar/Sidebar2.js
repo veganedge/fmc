@@ -1,9 +1,13 @@
-import FMC_logo from '../../../assets/navbar_logo_dropshadow.png';
-import { Link } from 'react-router-dom';
+/* Imports from React */
 import { useState } from 'react';
+/* Imports from React Router */
+import { Link } from 'react-router-dom';
+/* Imported stylesheet */
+import classes from './Sidebar.module.css';
+/* Imported assets */
+import FMC_logo from '../../../assets/navbar_logo_dropshadow.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faBolt, faCalendar, faChartLine, faChevronLeft, faChevronRight, faDollarSign, faPoll } from '@fortawesome/free-solid-svg-icons';
-import classes from './Sidebar.module.css';
 
 
 const Sidebar2 = () => {
@@ -14,7 +18,6 @@ const Sidebar2 = () => {
         const expandmenu = document.getElementsByClassName(classes.sidebar)[0];
         expandmenu.classList.toggle(classes.expanded);
     }
-
 
     return(
         <nav className={classes.sidebar}>

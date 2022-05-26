@@ -1,3 +1,4 @@
+/* Imported stylesheet */
 import classes from './Charting.module.css';
 
 const Charting = () => {

@@ -1,3 +1,4 @@
+/* Imported assets */
 import BGimageDesktop from '../../assets/Desktop_BG.png';
 /*import BGimageTablet from '../assets/Tablet_BG.svg';
 import BGimageMobile from '../assets/Mobile_BG.svg';*/
