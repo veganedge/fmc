@@ -25,7 +25,7 @@ export const DashNavLink = ({expandSidebar, link, icon, text }) => {
 }
 
 
-//Define the prop types of what this component needs to component needs
+//Define the prop types of what this component needs 
 DashNavLink.prototype = {
   expandSidebar: PropTypes.bool.isRequired,
   link: PropTypes.string.isRequired,
