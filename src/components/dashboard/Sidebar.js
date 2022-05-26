@@ -22,9 +22,9 @@ const Sidebar = () => {
                 <div className='sidebar-logo-chevron-container'>
                     <Link to="/"><img src={FMC_logo} alt="FMC logo" className='sidebar-navlogo'></img></Link>
                     <span className='spacer'></span>
-                    <btn onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
+                    <div className = {expandSidebar ? 'sidebar-chevron-left' : 'sidebar-chevron-right'} onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
                          <FontAwesomeIcon icon={ expandSidebar ? faChevronLeft : faChevronRight} className={`${expandSidebar && "sidebar-link-active"} sidebar-link sidebar-chevron fa-2x`} /> 
-                    </btn>
+                    </div>
                     <span className='spacer'></span>
                 </div>
                 <span className='spacer'></span>

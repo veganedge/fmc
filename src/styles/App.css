@@ -226,6 +226,16 @@ a, button, btn {
     display: flex;
 }
 
+.sidebar-chevron-right {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-chevron-left {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .spacer {
     height: 40px;
 }
