@@ -1,5 +1,5 @@
 /* Importing custom components */
-import ItemCard from "./marketplace/ItemCard";
+import ItemCard from "./ItemCard.js";
 
 
 const Marketplace = () => {
