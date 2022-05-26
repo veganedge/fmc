@@ -1,6 +1,6 @@
-import Discord from './about/Discord.js';
-import Team from './about/Team.js';
-import Whitepaper from './about/Whitepaper';
+import Discord from './Discord.js';
+import Team from './Team.js';
+import Whitepaper from './Whitepaper';
 
 const About = () => {
     return (
