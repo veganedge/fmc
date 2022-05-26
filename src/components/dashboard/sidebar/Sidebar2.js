@@ -1,37 +1,38 @@
-import FMC_logo from '../../assets/navbar_logo_dropshadow.png';
+import FMC_logo from '../../../assets/navbar_logo_dropshadow.png';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faBolt, faCalendar, faChartLine, faChevronLeft, faChevronRight, faDollarSign, faPoll } from '@fortawesome/free-solid-svg-icons';
+import classes from './Sidebar.module.css';
 
 
-const Sidebar = () => {
+const Sidebar2 = () => {
 
     const [expandSidebar, setExpandSidebar] = useState(false);
 
     const handleClick = () => { 
-        const expandmenu = document.getElementsByClassName('sidebar')[0];
-        expandmenu.classList.toggle('expanded');
+        const expandmenu = document.getElementsByClassName(classes.sidebar)[0];
+        expandmenu.classList.toggle(classes.expanded);
     }
 
 
     return(
-        <nav className='sidebar'>
-            <div className='sidebar-icons-container'>
-                <div className='sidebar-logo-chevron-container'>
-                    <Link to="/"><img src={FMC_logo} alt="FMC logo" className='sidebar-navlogo'></img></Link>
-                    <span className='spacer'></span>
+        <nav className={classes.sidebar}>
+            <div className={classes.sidebarIconsContainer}>
+                <div className={classes.sidebarLogoChevronContainer}>
+                    <Link to="/"><img src={FMC_logo} alt="FMC logo" className={classes.sidebarNavlogo}></img></Link>
+                    <span></span>
                     <btn onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
-                        { expandSidebar ? <FontAwesomeIcon icon={faChevronLeft} className='sidebar-link sidebar-chevron fa-2x' /> : <FontAwesomeIcon icon={faChevronRight} className='sidebar-link sidebar-chevron fa-2x'/> }
+                        { expandSidebar ? <FontAwesomeIcon icon={faChevronLeft} className={`${classes.sidebarLink} fa-2x`} /> : <FontAwesomeIcon icon={faChevronRight} className={`${classes.sidebarLink} ${classes.sidebarChevron} fa-2x`} /> }
                     </btn>
-                    <span className='spacer'></span>
+                    <span></span>
                 </div>
-                <span className='spacer'></span>
+                <span></span>
                 <ul>
                     <li>
                         <Link 
                         to="/Dashboard/Marketplace" 
-                        className='sidebar-link fa-2x' 
+                        className={`${classes.sidebarLink} fa-2x`} 
                         /* active styling not working so far */
                         /* style={isActive => ({color: isActive ? "#11df93" : "#3e4145"})}*/ >
                             { expandSidebar ? <p>Shop</p> : null }
@@ -39,40 +40,40 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Dashboard/Charting" className='sidebar-link fa-2x'>
+                        <Link to="/Dashboard/Charting" className={`${classes.sidebarLink} fa-2x`}>
                             { expandSidebar ? <p>Chart</p> : null }
                             <FontAwesomeIcon icon={faChartLine} />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Dashboard/Calendar" className='sidebar-link fa-2x'>
+                        <Link to="/Dashboard/Calendar" className={`${classes.sidebarLink} fa-2x`}>
                             { expandSidebar ? <p>Dates</p> : null }
                             <FontAwesomeIcon icon={faCalendar} />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Dashboard/Profits" className='sidebar-link fa-2x'>
+                        <Link to="/Dashboard/Profits" className={`${classes.sidebarLink} fa-2x`}>
                             { expandSidebar ? <p>Profits</p> : null }
                             <FontAwesomeIcon icon={faPoll} />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Dashboard/Notifications" className='sidebar-link fa-2x'>
+                        <Link to="/Dashboard/Notifications" className={`${classes.sidebarLink} fa-2x`}>
                             { expandSidebar ? <p>Notify</p> : null }
                             <FontAwesomeIcon icon={faBell} />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Dashboard/NodeInfo" className='sidebar-link fa-2x'>
+                        <Link to="/Dashboard/NodeInfo" className={`${classes.sidebarLink} fa-2x`}>
                             { expandSidebar ? <p>Node</p> : null }
                             <FontAwesomeIcon icon={faBolt} />
                         </Link>
                     </li>
                 </ul>
-                <span className='spacer'></span>
+                <span></span>
             </div>
         </nav>
     );
 }
 
-export default Sidebar;
+export default Sidebar2;

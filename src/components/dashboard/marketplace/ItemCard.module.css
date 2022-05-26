@@ -1,0 +1,47 @@
+.itemCardContainer {
+    border: 3px solid black;
+    margin: 3px 0px;
+}
+
+.aboveImageContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+}
+
+p {
+    color:#9c00e2;
+    font-size: 12px;
+}
+
+img {
+    margin: 0px 20px 0px 20px;
+}
+
+h3 {
+    color: #9c00e2;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    color: black;
+    font-size: 14px;
+    max-width: 200px;
+}
+
+button {
+    background-color: #1e1f21;
+    color:#3e4145;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 15px 0px 8px 0px;
+    border-radius: 10px;
+}
+
+button:hover {
+    color:#76fff8;
+}

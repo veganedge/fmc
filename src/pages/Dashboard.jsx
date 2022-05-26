@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import Sidebar from '../components/dashboard/Sidebar.js';
+import Sidebar2 from '../components/dashboard/sidebar/Sidebar2.js';
 import DashboardIntro from '../components/dashboard/DashboardIntro.js';
 import Marketplace from '../components/dashboard/Marketplace.js';
-import Charting from '../components/dashboard/Charting.js';
+import Charting from '../components/dashboard/charting/Charting.js';
 import Calendar from '../components/dashboard/Calendar.js';
 import Profits from '../components/dashboard/Profits.js';
 import Notifications from '../components/dashboard/Notifications.js';
@@ -13,7 +14,7 @@ import DashNoPage from './DashNoPage.jsx';
 const Dashboard = () => {
     return (
         <div className='dashboard'>
-            <Sidebar />
+            <Sidebar2 />
             <div className='dashboard-content'>
                 <Routes>
                     <Route path="/" element={<DashboardIntro />} />
