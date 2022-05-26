@@ -21,56 +21,56 @@ const Sidebar2 = () => {
             <div className={classes.sidebarIconsContainer}>
                 <div className={classes.sidebarLogoChevronContainer}>
                     <Link to="/"><img src={FMC_logo} alt="FMC logo" className={classes.sidebarNavlogo}></img></Link>
-                    <span></span>
+                    <span className={classes.spacer}></span>
                     <div className={ expandSidebar ? classes.sidebarChevronLeft : classes.sidebarChevronRight} onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
                         { expandSidebar ? <FontAwesomeIcon icon={faChevronLeft} className={`${classes.sidebarLink} fa-2x`} /> : <FontAwesomeIcon icon={faChevronRight} className={`${classes.sidebarLink} fa-2x`} /> }
                     </div>
-                    <span></span>
+                    <span className={classes.spacer}></span>
                 </div>
-                <span></span>
-                <ul>
-                    <li>
+                <span className={classes.spacer}></span>
+                <ul className={classes.sidebarUl}>
+                    <li className={classes.sidebarLi}>
                         <Link 
                         to="/Dashboard/Marketplace" 
-                        className={`${classes.sidebarLink} fa-2x`} 
+                        className={`${classes.sidebarLink} ${classes.sidebarP} fa-2x`} 
                         /* active styling not working so far */
                         /* style={isActive => ({color: isActive ? "#11df93" : "#3e4145"})}*/ >
-                            { expandSidebar ? <p>Shop</p> : null }
+                            { expandSidebar ? <p className={classes.sidebarP}>Shop</p> : null }
                             <FontAwesomeIcon icon={faDollarSign} />
                         </Link>
                     </li>
-                    <li>
+                    <li className={classes.sidebarLi}>
                         <Link to="/Dashboard/Charting" className={`${classes.sidebarLink} fa-2x`}>
-                            { expandSidebar ? <p>Chart</p> : null }
+                            { expandSidebar ? <p className={classes.sidebarP}>Chart</p> : null }
                             <FontAwesomeIcon icon={faChartLine} />
                         </Link>
                     </li>
-                    <li>
+                    <li className={classes.sidebarLi}>
                         <Link to="/Dashboard/Calendar" className={`${classes.sidebarLink} fa-2x`}>
-                            { expandSidebar ? <p>Dates</p> : null }
+                            { expandSidebar ? <p className={classes.sidebarP}>Dates</p> : null }
                             <FontAwesomeIcon icon={faCalendar} />
                         </Link>
                     </li>
-                    <li>
+                    <li className={classes.sidebarLi}>
                         <Link to="/Dashboard/Profits" className={`${classes.sidebarLink} fa-2x`}>
-                            { expandSidebar ? <p>Profits</p> : null }
+                            { expandSidebar ? <p className={classes.sidebarP}>Profits</p> : null }
                             <FontAwesomeIcon icon={faPoll} />
                         </Link>
                     </li>
-                    <li>
+                    <li className={classes.sidebarLi}>
                         <Link to="/Dashboard/Notifications" className={`${classes.sidebarLink} fa-2x`}>
-                            { expandSidebar ? <p>Notify</p> : null }
+                            { expandSidebar ? <p className={classes.sidebarP}>Notify</p> : null }
                             <FontAwesomeIcon icon={faBell} />
                         </Link>
                     </li>
-                    <li>
+                    <li className={classes.sidebarLi}>
                         <Link to="/Dashboard/NodeInfo" className={`${classes.sidebarLink} fa-2x`}>
-                            { expandSidebar ? <p>Node</p> : null }
+                            { expandSidebar ? <p className={classes.sidebarP}>Node</p> : null }
                             <FontAwesomeIcon icon={faBolt} />
                         </Link>
                     </li>
                 </ul>
-                <span></span>
+                <span className={classes.spacer}></span>
             </div>
         </nav>
     );
