@@ -21,13 +21,12 @@ const Sidebar = () => {
         expandmenu.classList.toggle(classes.expanded);
     }
 
-
     return(
         <nav className={classes.sidebar}>
             <div className={classes.sidebarIconsContainer}>
                 <div className={classes.sidebarLogoChevronContainer}>
                     <Link to="/"><img src={FMC_logo} alt="FMC logo" className={classes.sidebarNavlogo}></img></Link>
-                    <span className='spacer'></span>
+                    <span className={classes.spacer}></span>
                     <div className = {expandSidebar ? classes.sidebarChevronLeft : classes.sidebarChevronRight} onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
                          <FontAwesomeIcon icon={ expandSidebar ? faChevronLeft : faChevronRight} className={`${expandSidebar && classes.sidebarLinkActive} ${classes.sidebarLink} fa-2x`} /> 
                     </div>

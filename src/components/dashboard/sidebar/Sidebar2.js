@@ -36,8 +36,7 @@ const Sidebar2 = () => {
                         <Link 
                         to="/Dashboard/Marketplace" 
                         className={`${classes.sidebarLink} ${classes.sidebarP} fa-2x`} 
-                        /* active styling not working so far */
-                        /* style={isActive => ({color: isActive ? "#11df93" : "#3e4145"})}*/ >
+                        >
                             { expandSidebar ? <p className={classes.sidebarP}>Shop</p> : null }
                             <FontAwesomeIcon icon={faDollarSign} />
                         </Link>

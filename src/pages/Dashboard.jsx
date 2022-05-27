@@ -1,7 +1,7 @@
 /* Imports from React Router */
 import { Routes, Route } from 'react-router-dom';
 /* Imported custom componenets */
-/*import Sidebar from '../components/dashboard/Sidebar.js';*/
+/*import Sidebar2 from '../components/dashboard/sidebar/Sidebar2.js';*/
 import Sidebar from '../components/dashboard/sidebar/Sidebar.js';
 import DashboardIntro from '../components/dashboard/DashboardIntro.js';
 import Marketplace from '../components/dashboard/marketplace/Marketplace.js';
