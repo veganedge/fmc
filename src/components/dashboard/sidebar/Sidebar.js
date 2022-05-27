@@ -3,7 +3,7 @@ import { useState } from 'react';
 /* Imports from React Router */
 import { Link } from 'react-router-dom';
 /* Imported custom components */
-import { DashNavLink } from '../../dashboardNavLink/DashNavLink';
+import { DashNavLink } from './dashboardNavLink/DashNavLink';
 /* Imported stylesheet */
 import classes from './Sidebar.module.css';
 /* Imported assets */

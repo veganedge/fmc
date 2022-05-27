@@ -1,35 +1,28 @@
-.center {
+.whitepaper h1 {
     text-align: center;
 }
 
-.marginBottom25 {
+.whitepaper p {
+    text-align: center;
     margin-bottom: 25px;
 }
 
-.discordButton {
+.whitepaper button {
     display: flex;
     width: auto;
     margin: auto;
     margin-bottom: 50px;
     border-radius: 10px;
     font-size: 24px;
-    align-items: center;
-    padding: 10px;
     background-color: rgb(109, 204, 162, 1);
-    cursor: pointer;
 }
 
-.discordButton a {
-    display: flex;
-    color: black;
-    text-decoration: none;
-}
-
-.discordButton p {
-    margin-left: 20px; 
+.whitepaperBtn a {
     color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.discordButton p:hover {
+.whitepaperBtn a:hover {
     color: #ffde59;
 }
