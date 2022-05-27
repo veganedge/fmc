@@ -13,10 +13,10 @@ const Discord = () => {
             <p style={{textAlign: 'center'}}>Truly ran as a club, we "hire" from within, and all members of FMC are constantly looking for opportunities to bring to the other members of the club.</p>
             <p style={{textAlign: 'center', marginBottom: 25}}>We have a Promoter Program that reach out to soon-to-launch projects and secure WL spots to raffle off amongst our community.</p>
             <button className={classes.discordButton}>
-                <a href="https://www.discord.gg/furusmintclub" target="_blank" rel="noreferrer noopener" className={classes.discordButtonLink}>
+                <a href="https://www.discord.gg/furusmintclub" target="_blank" rel="noreferrer noopener" >
                     <FontAwesomeIcon icon={faDiscord} />
                 </a>
-                <div className={classes.discordButtonText}>
+                <div>
                     <p>Join the discord</p>
                 </div>
             </button>
