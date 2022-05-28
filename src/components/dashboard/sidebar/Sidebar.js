@@ -21,7 +21,6 @@ const Sidebar = () => {
         expandmenu.classList.toggle(classes.expanded);
     }
 
-
     return(
         <nav className={classes.sidebar}>
             <div className={classes.sidebarIconsContainer}>
