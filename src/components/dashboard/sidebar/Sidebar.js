@@ -42,7 +42,7 @@ const Sidebar = () => {
                             icon={faDollarSign}
                         />
                     </li>
-                    <li className={classes.sidebarLi}>
+                    <li>
                         <DashNavLink 
                             expandSidebar={expandSidebar}
                             link="/Dashboard/Charting" 
@@ -50,7 +50,7 @@ const Sidebar = () => {
                             icon={faChartLine}
                         />
                     </li>
-                    <li className={classes.sidebarLi}>
+                    <li>
                         <DashNavLink 
                             expandSidebar={expandSidebar}
                             link="/Dashboard/Calendar" 
@@ -58,7 +58,7 @@ const Sidebar = () => {
                             icon={faCalendar}
                         />
                     </li>
-                    <li className={classes.sidebarLi}>
+                    <li>
                         <DashNavLink 
                             expandSidebar={expandSidebar}
                             link="/Dashboard/Profits" 
@@ -66,7 +66,7 @@ const Sidebar = () => {
                             icon={faPoll}
                         />
                     </li>
-                    <li className={classes.sidebarLi}>
+                    <li>
                         <DashNavLink 
                             expandSidebar={expandSidebar}
                             link="/Dashboard/Notifications" 
@@ -74,7 +74,7 @@ const Sidebar = () => {
                             icon={faBell}
                         />
                     </li>
-                    <li className={classes.sidebarLi}>
+                    <li>
                         <DashNavLink 
                             expandSidebar={expandSidebar}
                             link="/Dashboard/NodeInfo" 
