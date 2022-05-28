@@ -48,15 +48,15 @@
     justify-content: flex-end;
 }
 
-.spacer {
+.sidebar span {
     height: 40px;
 }
 
-.sidebarUl {
+.sidebar ul {
     list-style-type: none;
 }
 
-.sidebarLi {
+.sidebar li {
     display: flex;
     align-items: center;
     justify-content: space-evenly;

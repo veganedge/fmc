@@ -1,0 +1,10 @@
+.newbie {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.newbie h1 {
+    text-align: center;
+    text-decoration: underline;
+}

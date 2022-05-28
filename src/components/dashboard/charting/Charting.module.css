@@ -9,7 +9,7 @@
     margin-left: 90px;
 }
 
-.chartingButton {
+.buttonContainer button {
     padding: 8px;
     margin: 25px;
     background-color: #1e1f21;
@@ -19,6 +19,6 @@
     font-weight: bold;
 }
 
-.chartingButton:hover{
+.buttonContainer button:hover{
     color: #76fff8;
 }

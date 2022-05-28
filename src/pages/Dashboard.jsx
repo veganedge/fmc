@@ -1,23 +1,29 @@
-/* Imports from React Router */
+// Imports from React Router
 import { Routes, Route } from 'react-router-dom';
+<<<<<<< HEAD
 /* Imported custom componenets */
 /*import Sidebar2 from '../components/dashboard/sidebar/Sidebar2.js';*/
+=======
+// Imported custom componenets
+>>>>>>> master
 import Sidebar from '../components/dashboard/sidebar/Sidebar.js';
 import DashboardIntro from '../components/dashboard/DashboardIntro.js';
 import Marketplace from '../components/dashboard/marketplace/Marketplace.js';
 import Charting from '../components/dashboard/charting/Charting.js';
-import Calendar from '../components/dashboard/Calendar.js';
-import Profits from '../components/dashboard/Profits.js';
-import Notifications from '../components/dashboard/Notifications.js';
-import NodeInfo from '../components/dashboard/NodeInfo.js';
-import DashNoPage from './DashNoPage.jsx';
+import Calendar from '../components/dashboard/calendar/Calendar.js';
+import Profits from '../components/dashboard/profits/Profits.js';
+import Notifications from '../components/dashboard/notifications/Notifications.js';
+import NodeInfo from '../components/dashboard/nodeinfo/NodeInfo.js';
+import NoPageFound from './NoPageFound.jsx';
+// Imported stylesheet
+import classes from './Dashboard.module.css';
 
 
 const Dashboard = () => {
     return (
-        <div className='dashboard'>
+        <div>
             <Sidebar />
-            <div className='dashboard-content'>
+            <div className={classes.dashboardContent}>
                 <Routes>
                     <Route path="/" element={<DashboardIntro />} />
                     <Route path="Marketplace" element={<Marketplace />} />
@@ -26,7 +32,7 @@ const Dashboard = () => {
                     <Route path="Profits" element={<Profits />} />
                     <Route path="Notifications" element={<Notifications />} />
                     <Route path="NodeInfo" element={<NodeInfo />} />
-                    <Route path="*" element={<DashNoPage />} />
+                    <Route path="*" element={<NoPageFound />} />
                 </Routes>
             </div> 
         </div>

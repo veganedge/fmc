@@ -1,9 +1,10 @@
-
+/* Imported stylesheet */
+import classes from './NewbieUniversity.module.css';
 
 const Newbie = () => {
     return (
-        <div className='newbie'>
-            <h1 style={{textAlign: 'center', textDecoration: 'underline'}}>Showing: Newbie University</h1>
+        <div className={classes.newbie}>
+            <h1>Showing: Newbie University</h1>
         </div>
         
     );

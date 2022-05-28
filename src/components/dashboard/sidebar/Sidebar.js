@@ -2,15 +2,15 @@
 import { useState } from 'react';
 /* Imports from React Router */
 import { Link } from 'react-router-dom';
-
+/* Imported custom components */
+import { DashNavLink } from './dashboardNavLink/DashNavLink';
+/* Imported stylesheet */
 import classes from './Sidebar.module.css';
-
 /* Imported assets */
 import FMC_logo from '../../../assets/navbar_logo_dropshadow.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faBolt, faCalendar, faChartLine, faChevronLeft, faChevronRight, faDollarSign, faPoll } from '@fortawesome/free-solid-svg-icons';
 
-import { DashNavLink } from '../../dashboardNavLink/DashNavLink';
 
 const Sidebar = () => {
 
@@ -26,15 +26,15 @@ const Sidebar = () => {
             <div className={classes.sidebarIconsContainer}>
                 <div className={classes.sidebarLogoChevronContainer}>
                     <Link to="/"><img src={FMC_logo} alt="FMC logo" className={classes.sidebarNavlogo}></img></Link>
-                    <span className={classes.spacer}></span>
+                    <span></span>
                     <div className = {expandSidebar ? classes.sidebarChevronLeft : classes.sidebarChevronRight} onClick={ () => { handleClick(); setExpandSidebar(!expandSidebar) }}>
                          <FontAwesomeIcon icon={ expandSidebar ? faChevronLeft : faChevronRight} className={`${expandSidebar && classes.sidebarLinkActive} ${classes.sidebarLink} fa-2x`} /> 
                     </div>
-                    <span className={classes.spacer}></span>
+                    <span></span>
                 </div>
-                <span className={classes.spacer}></span>
-                <ul className={classes.sidebarUl}>
-                    <li className={classes.sidebarLi}>
+                <span></span>
+                <ul>
+                    <li>
                         <DashNavLink 
                             expandSidebar={expandSidebar}
                             link="/Dashboard/Marketplace" 
@@ -83,7 +83,7 @@ const Sidebar = () => {
                         />
                     </li>
                 </ul>
-                <span className={classes.spacer}></span>
+                <span></span>
             </div>
         </nav>
     );

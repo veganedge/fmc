@@ -3,12 +3,12 @@ import { Routes, Route } from 'react-router-dom';
 /* Imported stylesheet */
 import '../styles/App.css';
 /* Imported custom componenets */
-import Navbar from '../components/general/Navbar.js';
+import Navbar from '../components/general/navbar/Navbar.js';
 import GeneralIntro from '../components/general/GeneralIntro';
 import About from '../components/general/about/About.js';
 import NewbieUniversity from '../components/general/newbieuniversity/NewbieUniversity.js';
-import GenNoPage from './GenNoPage.jsx';
-import Footer from '../components/general/Footer.js';
+import NoPageFound from './NoPageFound.jsx';
+import Footer from '../components/general/footer/Footer.js';
 
 
 function General() {
@@ -21,7 +21,7 @@ function General() {
           <Route path="/" element={<GeneralIntro />} />
           <Route path="About" element={<About />} />
           <Route path="Newbie" element={<NewbieUniversity />} />
-          <Route path="*" element={<GenNoPage />} />
+          <Route path="*" element={<NoPageFound />} />
         </Routes>
       </div>
       <Footer />
