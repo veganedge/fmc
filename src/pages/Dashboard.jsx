@@ -1,11 +1,6 @@
 // Imports from React Router
 import { Routes, Route } from 'react-router-dom';
-<<<<<<< HEAD
-/* Imported custom componenets */
-/*import Sidebar2 from '../components/dashboard/sidebar/Sidebar2.js';*/
-=======
 // Imported custom componenets
->>>>>>> master
 import Sidebar from '../components/dashboard/sidebar/Sidebar.js';
 import DashboardIntro from '../components/dashboard/DashboardIntro.js';
 import Marketplace from '../components/dashboard/marketplace/Marketplace.js';
