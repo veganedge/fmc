@@ -1,10 +1,12 @@
-.aboutCenter {
-    text-align: center;
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 
-.aboutUnderline {
-    text-decoration: underline;
-}
-.aboutMarginBottom100{
-    margin-bottom: 100px;
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
 }

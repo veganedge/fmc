@@ -1,8 +1,16 @@
-.team h1 {
-    text-align: center;
+.team {
+  border: solid #ffde59 2px;
+  border-radius: 10px;
+  padding: 25px 50px;
+}
+
+.team h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 800;
+  color: rgb(109, 204, 162, 1);
 }
 
 .team p {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
 }

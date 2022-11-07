@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './styles/index.css';
-import Dashboard from './pages/Dashboard.jsx';
-import General from './pages/General.jsx';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./styles/index.css";
+import Dashboard from "./pages/Dashboard.jsx";
+import General from "./pages/General.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,5 +14,5 @@ ReactDOM.render(
       </Routes>
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

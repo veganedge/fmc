@@ -1,21 +1,24 @@
 /* Imported custom components */
-import Discord from './discord/Discord.js';
-import Team from './team/Team.js';
-import Whitepaper from './whitepaper/Whitepaper';
+import Discord from "./discord/Discord.js";
+import Team from "./team/Team.js";
+import Whitepaper from "./whitepaper/Whitepaper";
+import Footer from "../footer/Footer.js";
 // Imported stylesheet
-import classes from './About.module.css';
+import classes from "./About.module.css";
 
 const About = () => {
-    return (
-        <div>
-            <h1 className={`${classes.aboutCenter} ${classes.aboutUnderline}`}>Showing: About</h1>
-            <p className={`${classes.aboutCenter} ${classes.aboutMarginBottom100}`}>Ideas for components to populate content:</p>
-            <Discord />
-            <Team />
-            <Whitepaper />
+  return (
+    <>
+      <div class={classes.aboutContainer}>
+        <div class={classes.aboutContent}>
+          <Discord />
+          <Team />
+          <Whitepaper />
         </div>
-        
-    );
-}
+      </div>
+      <Footer />
+    </>
+  );
+};
 
 export default About;
