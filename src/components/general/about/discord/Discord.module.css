@@ -1,4 +1,21 @@
-.center {
+.discord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid #ffde59 2px;
+  border-radius: 10px;
+  padding: 25px 50px;
+  margin: 25px 0px;
+}
+
+.discord h2 {
+  color: rgb(109, 204, 162, 1);
+  font-weight: 800;
+  text-align: center;
+}
+
+.discord p {
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -10,7 +27,6 @@
   display: flex;
   width: auto;
   margin: auto;
-  margin-bottom: 50px;
   border-radius: 10px;
   font-size: 24px;
   align-items: center;

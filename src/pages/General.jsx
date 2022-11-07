@@ -8,7 +8,6 @@ import GeneralIntro from "../components/general/GeneralIntro";
 import About from "../components/general/about/About.js";
 import NewbieUniversity from "../components/general/newbieuniversity/NewbieUniversity.js";
 import NoPageFound from "./NoPageFound.jsx";
-import Footer from "../components/general/footer/Footer.js";
 
 function General() {
   return (
@@ -22,7 +21,6 @@ function General() {
           <Route path="*" element={<NoPageFound />} />
         </Routes>
       </div>
-      <Footer />
     </div>
   );
 }

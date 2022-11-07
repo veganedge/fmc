@@ -4,7 +4,8 @@ import classes from "./Whitepaper.module.css";
 const Whitepaper = () => {
   return (
     <div className={classes.whitepaper}>
-      <h2>Community</h2>
+      <h2>VISION</h2>
+      <h3>Community</h3>
       <p>
         A supportive community comes first. We have created a space where
         thousands of members discuss their successes and failures, learn from
@@ -15,7 +16,7 @@ const Whitepaper = () => {
         be a lonely and sad life. We make it a priority to be a place to not
         only learn, but also connect genuinely and positively with one another.
       </p>
-      <h2>Education</h2>
+      <h3>Education</h3>
       <p>
         Education is also important in FMC. We want to enrich and develop
         newcomers to trading. Initially, we want to explain best practices to
@@ -27,7 +28,7 @@ const Whitepaper = () => {
         continue to develop, we will be creating additional focused content for
         our more advanced and dedicated members.
       </p>
-      <h2>Alpha</h2>
+      <h3>Alpha</h3>
       <p>
         We want to give you as much of an edge over every other trader as we
         can. This comes from announcing projects very early in their pre-launch
@@ -45,7 +46,7 @@ const Whitepaper = () => {
           target="_blank"
           rel="noreferrer noopener"
         >
-          Read the whitepaper
+          Read full whitepaper
         </a>
       </button>
     </div>

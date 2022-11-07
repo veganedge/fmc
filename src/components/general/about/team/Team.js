@@ -4,7 +4,7 @@ import classes from "./Team.module.css";
 const Team = () => {
   return (
     <div className={classes.team}>
-      <h1>Content: Team</h1>
+      <h2>TEAM</h2>
       <p>Cards with photos, usernames, positions</p>
     </div>
   );
