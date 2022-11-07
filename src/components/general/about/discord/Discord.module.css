@@ -1,35 +1,37 @@
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .marginBottom25 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .discordButton {
-    display: flex;
-    width: auto;
-    margin: auto;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    font-size: 24px;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(109, 204, 162, 1);
-    cursor: pointer;
+  display: flex;
+  width: auto;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(109, 204, 162, 1);
 }
 
 .discordButton a {
-    display: flex;
-    color: black;
-    text-decoration: none;
+  display: flex;
+  color: black;
+  text-decoration: none;
 }
 
 .discordButton p {
-    margin-left: 20px; 
-    color: white;
+  margin-left: 20px;
+  color: white;
 }
 
-.discordButton p:hover {
-    color: #ffde59;
+.discordButton:hover {
+  background-color: rgb(68, 201, 143);
+}
+.discordButton:hover p {
+  color: #ffde59;
 }
