@@ -1,29 +1,23 @@
 /* Imported assets */
-import BGimageDesktop from '../../assets/Desktop_BG.png';
+import BGimageDesktop from "../../assets/Desktop_BG.png";
 /*import BGimageTablet from '../assets/Tablet_BG.svg';
 import BGimageMobile from '../assets/Mobile_BG.svg';*/
 
-
 const divStyle = {
-    width: '100vw',
-    height: '100vh',
-    backgroundImage: `url(${BGimageDesktop})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundAttachment: 'fixed',
-    backgroundColor: '#6dcca2',
-}    
-
-
+  width: "100vw",
+  height: "100vh",
+  backgroundImage: `url(${BGimageDesktop})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center center",
+  backgroundAttachment: "fixed",
+  backgroundColor: "#6dcca2",
+};
 
 const GeneralIntro = () => {
-    return(
-        <div className='general-intro' style={divStyle}></div>
-    );
-}
+  return <div className="general-intro" style={divStyle}></div>;
+};
 
 export default GeneralIntro;
-
 
 // === HOME ===
 
@@ -34,7 +28,6 @@ export default GeneralIntro;
 // -- Size --
 // size properly so can't scroll vertically
 
-
 // === NAVBAR ===
 
 // -- Darkmode --
@@ -42,11 +35,7 @@ export default GeneralIntro;
 // setup css classes for each element want changed
 // setup query to change classes?
 
-
 // === APP ===
-
-
-
 
 // === TEAM ===
 
@@ -56,12 +45,10 @@ export default GeneralIntro;
 // and short description of role
 // media queries to make responsive layout for mobile, tablet, and desktop
 
-
 // === ABOUT ===
 
 // -- Layout --
 // show Discord, Team, and Whitepaper
-
 
 // === PUBLIC FOLDER ===
 

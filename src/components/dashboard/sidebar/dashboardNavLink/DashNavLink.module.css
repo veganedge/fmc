@@ -6,7 +6,8 @@
   color: #3e4145;
 }
 
-.sidebarLink:hover, .sidebarLinkActive{
+.sidebarLink:hover,
+.sidebarLinkActive {
   color: #11df93;
 }
 

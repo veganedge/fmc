@@ -1,28 +1,32 @@
-.whitepaper h1 {
-    text-align: center;
+.whitepaper h2 {
+  text-align: center;
 }
 
 .whitepaper p {
-    text-align: center;
-    margin-bottom: 25px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .whitepaper button {
-    display: flex;
-    width: auto;
-    margin: auto;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    font-size: 24px;
-    background-color: rgb(109, 204, 162, 1);
+  display: flex;
+  width: auto;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 10px;
+  background-color: rgb(109, 204, 162, 1);
 }
 
 .whitepaperBtn a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
+  color: white;
+  text-decoration: none;
 }
 
-.whitepaperBtn a:hover {
-    color: #ffde59;
+.whitepaperBtn:hover {
+  background-color: rgb(68, 201, 143);
+}
+
+.whitepaperBtn:hover a {
+  color: #ffde59;
 }
