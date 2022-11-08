@@ -6,7 +6,8 @@ import "../styles/App.css";
 import Navbar from "../components/general/navbar/Navbar.js";
 import GeneralIntro from "../components/general/GeneralIntro";
 import About from "../components/general/about/About.js";
-import NewbieUniversity from "../components/general/newbieuniversity/NewbieUniversity.js";
+import Team from "../components/general/about/team/Team";
+import Whitepaper from "../components/general/whitepaper/Whitepaper";
 import NoPageFound from "./NoPageFound.jsx";
 
 function General() {
@@ -17,7 +18,8 @@ function General() {
         <Routes>
           <Route path="/" element={<GeneralIntro />} />
           <Route path="About" element={<About />} />
-          <Route path="Newbie" element={<NewbieUniversity />} />
+          <Route path="Team" element={<Team />} />
+          <Route path="Whitepaper" element={<Whitepaper />} />
           <Route path="*" element={<NoPageFound />} />
         </Routes>
       </div>
