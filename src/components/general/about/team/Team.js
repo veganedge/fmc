@@ -23,35 +23,35 @@ const Team = () => {
         />
         <TeamCard
           title="Club Manager"
-          imageSrc="../../../../assets/staff_logos/duststorm.png"
+          imageSrc="../../../../../assets/staff_logos/duststorm.png"
           imageAlt="Club Manager: DustStorm"
           discordUsername="FMC DustStorm"
           twitterUsername="@The_Duststorm"
         />
         <TeamCard
           title="Club Manager"
-          imageSrc="../../../assets/staff_logos/ollie.png"
+          imageSrc="../../../../../assets/staff_logos/ollie.png"
           imageAlt="Club Manager: OllieJames"
           discordUsername="FMC OllieJames"
           twitterUsername="@NFT_Talks"
         />
         <TeamCard
           title="Club Manager"
-          imageSrc="src/assets/staff_logos/lowrider.png"
+          imageSrc="../../../../../assets/staff_logos/lowrider.png"
           imageAlt="Club Manager: Lowrider"
           discordUsername="FMC Lowrider"
           twitterUsername="@lowriderrr7"
         />
         <TeamCard
           title="Club Manager"
-          imageSrc="src/assets/staff_logos/tj.png"
+          imageSrc="../../../../../assets/staff_logos/tj.png"
           imageAlt="Club Manager: TJ"
           discordUsername="FMC TJ"
           twitterUsername="@TJ_FMC"
         />
         <TeamCard
           title="Club Manager"
-          imageSrc="src/assets/staff_logos/cerqua.png"
+          imageSrc="../../../../../assets/staff_logos/cerqua.png"
           imageAlt="Club Manager: Cerqua"
           discordUsername="cerqua"
           twitterUsername="@cerqua"

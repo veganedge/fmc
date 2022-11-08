@@ -10,12 +10,18 @@ const TeamCard = ({
 }) => {
   return (
     <div className={classes.teamCardContainer}>
-      <div className={classes.aboveImageContainer}>
+      <div className={classes.titleContainer}>
         <h3>{title}</h3>
       </div>
-      <img src={imageSrc} alt={imageAlt}></img>
-      <h5>Discord: {discordUsername}</h5>
-      <h5>Twitter: {twitterUsername}</h5>
+      <div className={classes.infoContainer}>
+        <img src={imageSrc} alt={imageAlt}></img>
+        <h5>
+          Discord: <span>{discordUsername}</span>
+        </h5>
+        <h5>
+          Twitter: <span>{twitterUsername}</span>
+        </h5>
+      </div>
     </div>
   );
 };
