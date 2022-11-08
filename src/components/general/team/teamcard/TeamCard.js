@@ -1,6 +1,6 @@
 /* Imported stylesheet */
 import classes from "./TeamCard.module.css";
-import imgSrc from "../../../../../assets/staff_logos/fmc.png";
+import imgSrc from "../../../../assets/staff_logos/fmc.png";
 
 const TeamCard = ({ title, imageAlt, discordUsername, twitterUsername }) => {
   return (
@@ -10,12 +10,12 @@ const TeamCard = ({ title, imageAlt, discordUsername, twitterUsername }) => {
       </div>
       <div className={classes.infoContainer}>
         <img src={imgSrc} alt={imageAlt}></img>
-        <h5>
+        <h4>
           Discord: <span>{discordUsername}</span>
-        </h5>
-        <h5>
+        </h4>
+        <h4>
           Twitter: <span>{twitterUsername}</span>
-        </h5>
+        </h4>
       </div>
     </div>
   );

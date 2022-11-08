@@ -2,7 +2,7 @@
 import classes from "./Team.module.css";
 // Imported components
 import TeamCard from "./teamcard/TeamCard";
-import Footer from "../../footer/Footer";
+import Footer from "../footer/Footer";
 
 const Team = () => {
   return (

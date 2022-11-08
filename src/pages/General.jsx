@@ -6,7 +6,7 @@ import "../styles/App.css";
 import Navbar from "../components/general/navbar/Navbar.js";
 import GeneralIntro from "../components/general/GeneralIntro";
 import About from "../components/general/about/About.js";
-import Team from "../components/general/about/team/Team";
+import Team from "../components/general/team/Team";
 import Whitepaper from "../components/general/whitepaper/Whitepaper";
 import NoPageFound from "./NoPageFound.jsx";
 
