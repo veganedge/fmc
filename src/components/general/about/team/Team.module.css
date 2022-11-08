@@ -11,6 +11,12 @@
   color: rgb(109, 204, 162, 1);
 }
 
-.team p {
-  text-align: center;
+.teamGridContainer {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
 }
