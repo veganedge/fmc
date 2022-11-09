@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 // Imported stylesheet
 import classes from "./About.module.css";
+import aboutImageSrc from "../../../assets/FMC_about.png";
 
 const About = () => {
   return (
@@ -37,6 +38,13 @@ const About = () => {
               </div>
             </a>
           </button>
+        </div>
+        <div className={classes.aboutImageContainer}>
+          <img
+            className={classes.aboutImage}
+            src={aboutImageSrc}
+            alt="About FMC"
+          />
         </div>
       </div>
       <Footer />
