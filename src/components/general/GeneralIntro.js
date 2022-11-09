@@ -6,7 +6,7 @@ import BGimageMobile from '../assets/Mobile_BG.svg';*/
 
 const divStyle = {
   width: "100vw",
-  height: "100vh",
+  height: "calc(100vh - 123px)",
   backgroundImage: `url(${BGimageDesktop})`,
   backgroundSize: "cover",
   backgroundPosition: "center center",
