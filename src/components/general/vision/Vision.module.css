@@ -1,9 +1,9 @@
-.whitepaperContainer {
+.visionContainer {
   display: flex;
   justify-content: center;
 }
 
-.whitepaperContent {
+.visionContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,25 +14,25 @@
   margin: 25px 0px;
 }
 
-.whitepaperContent h2 {
+.visionContent h2 {
   text-align: center;
   margin-bottom: 25px;
   font-weight: 800;
   color: rgb(109, 204, 162, 1);
 }
 
-.whitepaperContent h3 {
+.visionContent h3 {
   text-align: center;
   margin-bottom: 5px;
 }
 
-.whitepaperContent p {
+.visionContent p {
   text-align: center;
   margin-bottom: 25px;
   line-height: 1.5rem;
 }
 
-.whitepaperContent button {
+.visionContent button {
   display: flex;
   width: auto;
   margin: auto;
@@ -42,15 +42,15 @@
   background-color: rgb(109, 204, 162, 1);
 }
 
-.whitepaperBtn a {
+.visionBtn a {
   color: white;
   text-decoration: none;
 }
 
-.whitepaperBtn:hover {
+.visionBtn:hover {
   background-color: rgb(68, 201, 143);
 }
 
-.whitepaperBtn:hover a {
+.visionBtn:hover a {
   color: #ffde59;
 }

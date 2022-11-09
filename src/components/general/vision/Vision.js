@@ -1,12 +1,12 @@
 /* Imported stylesheet */
 import Footer from "../footer/Footer";
-import classes from "./Whitepaper.module.css";
+import classes from "./Vision.module.css";
 
-const Whitepaper = () => {
+const Vision = () => {
   return (
     <>
-      <div className={classes.whitepaperContainer}>
-        <div className={classes.whitepaperContent}>
+      <div className={classes.visionContainer}>
+        <div className={classes.visionContent}>
           <h2>VISION</h2>
           <h3>Community</h3>
           <p>
@@ -45,7 +45,7 @@ const Whitepaper = () => {
             markets, minting projects to make his trademark volume calls - which
             have achieved an extremely high success rate.
           </p>
-          <button className={classes.whitepaperBtn}>
+          <button className={classes.visionBtn}>
             <a
               href="https://furusmintclub.gitbook.io/fmc-genesis-whitepaper/"
               target="_blank"
@@ -61,4 +61,4 @@ const Whitepaper = () => {
   );
 };
 
-export default Whitepaper;
+export default Vision;
