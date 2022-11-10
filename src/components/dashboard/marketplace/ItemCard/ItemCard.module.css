@@ -1,13 +1,18 @@
 .itemCardContainer {
   border: 3px solid black;
-  margin: 3px 0px;
+  margin: 3px 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px 10px 20px;
+  background-color: #44484d;
 }
 
 .aboveImageContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 8px;
+  padding-bottom: 5px;
 }
 
 .aboveImageContainer p {
@@ -17,6 +22,8 @@
 
 .itemCardContainer h3 {
   color: #008fff;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .itemCardContainer h5 {
@@ -30,11 +37,11 @@
 
 .itemCardContainer button {
   background-color: #1e1f21;
-  color: #3e4145;
+  color: #44484d;
   font-size: 18px;
   font-weight: bold;
   padding: 8px;
-  margin: 15px 0px 8px 0px;
+  margin-top: 15px;
   border-radius: 10px;
 }
 

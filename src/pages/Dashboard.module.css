@@ -1,9 +1,14 @@
-.dashboardContent {
-  display: flex;
+.dashboard {
+  margin: 0;
+  color: white;
+  background-color: #333639;
   width: 100vw;
   height: 100vh;
+}
+
+.dashboardContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 60px;
-  text-align: center;
-  color: white;
-  background-color: #3e4145;
 }

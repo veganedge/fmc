@@ -15,7 +15,7 @@ import classes from "./Dashboard.module.css";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className={classes.dashboard}>
       <Sidebar />
       <div className={classes.dashboardContent}>
         <Routes>
