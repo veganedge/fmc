@@ -1,12 +1,12 @@
-/* Imports from React */
+// Imports from React
 import { useState } from "react";
-/* Imports from React Router */
+// Imports from React Router
 import { Link } from "react-router-dom";
-/* Imported custom components */
+// Imported custom components
 import { DashNavLink } from "./dashboardNavLink/DashNavLink";
-/* Imported stylesheet */
+// Imported stylesheet
 import classes from "./Sidebar.module.css";
-/* Imported assets */
+// Imported assets
 import FMC_logo from "../../../assets/navbar_logo_dropshadow.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -26,6 +26,7 @@ const Sidebar = () => {
   const handleClick = () => {
     const expandmenu = document.getElementsByClassName(classes.sidebar)[0];
     expandmenu.classList.toggle(classes.expanded);
+    setExpandSidebar((expandSidebar) => !expandSidebar);
   };
 
   return (
@@ -48,7 +49,6 @@ const Sidebar = () => {
             }
             onClick={() => {
               handleClick();
-              setExpandSidebar(!expandSidebar);
             }}
           >
             <FontAwesomeIcon
@@ -62,7 +62,13 @@ const Sidebar = () => {
         </div>
         <span></span>
         <ul>
-          <li>
+          <li
+            onClick={() => {
+              if (expandSidebar) {
+                handleClick();
+              }
+            }}
+          >
             <DashNavLink
               expandSidebar={expandSidebar}
               link="/Dashboard/Marketplace"
@@ -70,7 +76,13 @@ const Sidebar = () => {
               icon={faDollarSign}
             />
           </li>
-          <li>
+          <li
+            onClick={() => {
+              if (expandSidebar) {
+                handleClick();
+              }
+            }}
+          >
             <DashNavLink
               expandSidebar={expandSidebar}
               link="/Dashboard/Charting"
@@ -78,7 +90,13 @@ const Sidebar = () => {
               icon={faChartLine}
             />
           </li>
-          <li>
+          <li
+            onClick={() => {
+              if (expandSidebar) {
+                handleClick();
+              }
+            }}
+          >
             <DashNavLink
               expandSidebar={expandSidebar}
               link="/Dashboard/Calendar"
@@ -86,7 +104,13 @@ const Sidebar = () => {
               icon={faCalendar}
             />
           </li>
-          <li>
+          <li
+            onClick={() => {
+              if (expandSidebar) {
+                handleClick();
+              }
+            }}
+          >
             <DashNavLink
               expandSidebar={expandSidebar}
               link="/Dashboard/Profits"
@@ -94,7 +118,13 @@ const Sidebar = () => {
               icon={faPoll}
             />
           </li>
-          <li>
+          <li
+            onClick={() => {
+              if (expandSidebar) {
+                handleClick();
+              }
+            }}
+          >
             <DashNavLink
               expandSidebar={expandSidebar}
               link="/Dashboard/Notifications"
@@ -102,7 +132,13 @@ const Sidebar = () => {
               icon={faBell}
             />
           </li>
-          <li>
+          <li
+            onClick={() => {
+              if (expandSidebar) {
+                handleClick();
+              }
+            }}
+          >
             <DashNavLink
               expandSidebar={expandSidebar}
               link="/Dashboard/NodeInfo"

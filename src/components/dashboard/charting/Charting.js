@@ -3,14 +3,14 @@ import classes from "./Charting.module.css";
 
 const Charting = () => {
   return (
-    <div>
-      <div className={classes.chartPlaceholder}>
+    <div className={classes.chartingContainer}>
+      <div className={classes.chartingImageContainer}>
         <img
-          src="https://via.placeholder.com/1200x600/1e1f21/3e4145?text=CHART"
+          src="https://via.placeholder.com/1200x600/1e1f21/44484d?text=CHART"
           alt="placeholder of chart"
-        ></img>
+        />
       </div>
-      <div className={classes.buttonContainer}>
+      <div className={classes.chartingButtonContainer}>
         <button>Button 1</button>
         <button>Button 2</button>
         <button>Button 3</button>

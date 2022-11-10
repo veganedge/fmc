@@ -1,5 +1,5 @@
 .footerContainer {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   bottom: 0;
@@ -37,6 +37,6 @@
   }
 
   .copyright {
-    font-size: 10px;
+    font-size: 11px;
   }
 }

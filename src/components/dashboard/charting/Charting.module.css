@@ -1,15 +1,21 @@
-.chartPlaceholder {
-  margin-top: 50px;
-  margin-left: 90px;
+.chartingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.buttonContainer {
+.chartingImageContainer {
+}
+
+.chartingButtonContainer {
   display: flex;
   justify-content: center;
-  margin-left: 90px;
 }
 
-.buttonContainer button {
+.chartingButtonContainer button {
   padding: 8px;
   margin: 25px;
   background-color: #1e1f21;
@@ -19,6 +25,6 @@
   font-weight: bold;
 }
 
-.buttonContainer button:hover {
+.chartingButtonContainer button:hover {
   color: #76fff8;
 }

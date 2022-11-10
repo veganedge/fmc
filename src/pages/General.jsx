@@ -1,13 +1,13 @@
-/* Imports from React Router */
+// Imports from React Router
 import { Routes, Route } from "react-router-dom";
-/* Imported stylesheet */
+// Imported stylesheet
 import "../styles/App.css";
-/* Imported custom componenets */
+// Imported custom componenets
 import Navbar from "../components/general/navbar/Navbar.js";
 import GeneralIntro from "../components/general/GeneralIntro";
 import About from "../components/general/about/About.js";
-import Team from "../components/general/about/team/Team";
-import Whitepaper from "../components/general/whitepaper/Whitepaper";
+import Team from "../components/general/team/Team";
+import Vision from "../components/general/vision/Vision";
 import NoPageFound from "./NoPageFound.jsx";
 
 function General() {
@@ -19,7 +19,7 @@ function General() {
           <Route path="/" element={<GeneralIntro />} />
           <Route path="About" element={<About />} />
           <Route path="Team" element={<Team />} />
-          <Route path="Whitepaper" element={<Whitepaper />} />
+          <Route path="Vision" element={<Vision />} />
           <Route path="*" element={<NoPageFound />} />
         </Routes>
       </div>

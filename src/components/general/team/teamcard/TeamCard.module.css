@@ -25,13 +25,13 @@
   width: 100%;
 }
 
-.infoContainer h5 {
+.infoContainer h4 {
   display: flex;
   justify-content: center;
   width: 100%;
   color: #008fff;
 }
 
-.infoContainer h5 span {
+.infoContainer h4 span {
   color: black;
 }

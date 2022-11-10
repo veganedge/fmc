@@ -1,19 +1,23 @@
 /* Imported stylesheet */
 import classes from "./ItemCard.module.css";
 
-const ItemCard = () => {
+const ItemCard = ({
+  tokenPrice,
+  qty,
+  imageSrc,
+  imageAlt,
+  title,
+  description,
+}) => {
   return (
     <div className={classes.itemCardContainer}>
       <div className={classes.aboveImageContainer}>
-        <p>$TOKENprice</p>
-        <p>QtyAvail</p>
+        <p>{tokenPrice}</p>
+        <p>{qty} available</p>
       </div>
-      <img
-        src="https://via.placeholder.com/150/1e1f21/3e4145?text=Item"
-        alt="marketplace item"
-      ></img>
-      <h3>Title</h3>
-      <h5>DESCRIPTION/BENEFTIS go on these lines here</h5>
+      <img src={imageSrc} alt={imageAlt}></img>
+      <h3>{title}</h3>
+      <h5>{description}</h5>
       <button>Purchase</button>
     </div>
   );

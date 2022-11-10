@@ -1,7 +1,9 @@
 .marketplaceImagesContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 60px;
+  justify-content: center;
+  align-items: center;
   padding: 30px 60px;
+  background-color: #333639;
+  color: white;
 }
